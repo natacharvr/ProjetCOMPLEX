@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 #parsing file and creating graph
 
 import re
 import random
+import time
 
 name = "exempleinstance.txt"
 file = open(name, "r")
@@ -44,7 +43,7 @@ def deepCopy(graph):
 def deleteOne(graph, sommet):
     graph2 = deepCopy(graph)
     #delete an arrete
-    for arrete in graph2[sommet]:
+    for arrete in list(graph2[sommet]):
         graph2[arrete].remove(sommet)
     del graph2[sommet]
     return graph2
@@ -94,31 +93,47 @@ def createGraph(n, p):
                 
     return newGraph
         
-generatedGraph = createGraph(5, 0.5)
+generatedGraph = createGraph(100, 0.5)
 print(generatedGraph)
 
 
 # 3: Méthodes approchées
 
 def algo_couplage(graph):
-    C = set()
+    C = []
     for sommet in graph:
         if sommet not in C :
             for arrete in graph[sommet]:
                 if arrete not in C :
-                    C.add(sommet)
-                    C.add(arrete)
+                    C.append(sommet)
+                    C.append(arrete)
+                    #print(C)
     return C
             
 def algo_glouton(graph):
     graph2 = deepCopy(graph)
-    C = set()
+    C = []
     while sum(degreSommets(graph2))>0:
         v = degreMaximal(graph2)
-        C.add(v)
+        C.append(v)
+        #print(C)
         graph2 = deleteOne(graph2, v)
     return C
 
+start = time.time()
+
 print("algo_couplage : ", algo_couplage(generatedGraph))
 
+end = time.time()
+elapsed = end - start
+
+print(f'Temps d\'exécution algo couplage : {elapsed:.2}ms')
+
+start = time.time()
+
 print("algo_glouton : ", algo_glouton(generatedGraph))
+
+end = time.time()
+elapsed = end - start
+
+print(f'Temps d\'exécution algo glouton : {elapsed:.2}ms')
