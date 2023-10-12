@@ -4,6 +4,7 @@
 import re
 import random
 import time
+import math
 
 name = "exempleinstance.txt"
 file = open(name, "r")
@@ -93,8 +94,8 @@ def createGraph(n, p):
                 
     return newGraph
         
-generatedGraph = createGraph(100, 0.5)
-print(generatedGraph)
+generatedGraph = createGraph(5, 0.5)
+#print(generatedGraph)
 
 
 # 3: Méthodes approchées
@@ -120,20 +121,124 @@ def algo_glouton(graph):
         graph2 = deleteOne(graph2, v)
     return C
 
-start = time.time()
+#start = time.time()
 
-print("algo_couplage : ", algo_couplage(generatedGraph))
+#print("algo_couplage : ", algo_couplage(generatedGraph))
 
-end = time.time()
-elapsed = end - start
+#end = time.time()
+#elapsed = end - start
 
-print(f'Temps d\'exécution algo couplage : {elapsed:.2}ms')
+#print(f'Temps d\'exécution algo couplage : {elapsed:.2}ms')
 
-start = time.time()
+#start = time.time()
 
-print("algo_glouton : ", algo_glouton(generatedGraph))
+#print("algo_glouton : ", algo_glouton(generatedGraph))
 
-end = time.time()
-elapsed = end - start
+#end = time.time()
+#elapsed = end - start
 
-print(f'Temps d\'exécution algo glouton : {elapsed:.2}ms')
+#print(f'Temps d\'exécution algo glouton : {elapsed:.2}ms')
+
+#Section 4
+
+#graph = {1:[2,3], 2:[1], 3:[1]}
+# question 1
+def branchement(graph):
+    print(graph)
+    selectedArete = 0
+    for sommet in graph.keys():
+        if len(graph[sommet]) != 0:
+            selectedArete = [sommet, min(graph[sommet])]
+            break
+    if selectedArete :
+        g = etudierSommet(graph, selectedArete[0]) 
+        d = etudierSommet(graph, selectedArete[1])
+        if min(g[0], d[0]) == g[0] :
+            return g
+        else:
+            return d
+    else:
+        return 0
+    
+def etudierSommet(graph, sommet):
+    myGraph = deleteOne(graph, sommet)
+    selectedArete = 0
+    for sommetEtudie in myGraph.keys():
+        if len(myGraph[sommetEtudie]) != 0:
+            selectedArete = [sommetEtudie, min(myGraph[sommetEtudie])]
+            break
+    if selectedArete :
+        g = etudierSommet(myGraph, selectedArete[0])  
+        d = etudierSommet(myGraph, selectedArete[1])
+        if min(g[0], d[0]) == g :
+            g[1].append(sommet)
+            return [g[0] + 1, g[1]]
+        else:
+            d[1].append(sommet)
+            return [d[0] + 1, d[1]]
+    else:
+        return [1, [sommet]]
+    
+graph = {0: {1, 3, 4}, 1: {0, 2}, 2: {1}, 3: {0}, 4: {0}}
+#print("solution : ", branchement(graph))
+
+#question 2
+
+def branchementCouplage(graph):
+    print("graph : ", graph)
+    selectedArete = 0
+    maxB(graph)
+    for sommet in graph.keys():
+        if len(graph[sommet]) != 0:
+            selectedArete = [sommet, min(graph[sommet])]
+            break
+    if selectedArete :
+        g = etudierSommetCouplage(graph, selectedArete[0]) 
+        d = etudierSommetCouplage(graph, selectedArete[1])
+        if min(g[0], d[0]) == g[0] :
+            return g
+        else:
+            return d
+    else:
+        return 0
+    
+    
+def etudierSommetCouplage(graph, sommet):
+    myGraph = deleteOne(graph, sommet)
+    selectedArete = 0
+    maxB(myGraph)
+    for sommetEtudie in myGraph.keys():
+        if len(myGraph[sommetEtudie]) != 0:
+            selectedArete = [sommetEtudie, min(myGraph[sommetEtudie])]
+            break
+    if selectedArete :
+        g = etudierSommetCouplage(myGraph, selectedArete[0])  
+        d = etudierSommetCouplage(myGraph, selectedArete[1])
+        if min(g[0], d[0]) == g :
+            g[1].append(sommet)
+            return [g[0] + 1, g[1]]
+        else:
+            d[1].append(sommet)
+            return [d[0] + 1, d[1]]
+    else:
+        return [1, [sommet]]
+
+def maxB(graph):
+    graph2 = deepCopy(graph)
+    couplage = algo_couplage(graph2)
+    print("couplage : ", couplage)
+    
+    B2 = len(couplage)
+    
+    #décompte arêtes 
+    delta = degreMaximal(graph2)
+    m = 0
+    for sommet in graph2:
+        m+= len(graph2[sommet])
+        for arrete in list(graph2[sommet]):
+            graph2[arrete].remove(sommet)
+        del graph2[sommet]
+
+    b1 = math.ceil(m/delta)
+
+print("solution : ", branchementCouplage(graph))
