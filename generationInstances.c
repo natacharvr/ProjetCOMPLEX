@@ -27,7 +27,7 @@ void genererInstance(int size, float proba, char* file_name) {
     //Pour chaque couple d'aretes, générer un float aléatoire
     // S'il est inférieur à proba, alors on ajoute l'arete au fichier
     for (int i=0; i<size; i++) {
-        for (int j=i; j<size; j++) {
+        for (int j=i+1; j<size; j++) {
             r = (float)rand()/(float)RAND_MAX;
             if (r < proba) {
                 fprintf(file, "%d %d\n", i, j);
@@ -45,15 +45,15 @@ void genererInstance(int size, float proba, char* file_name) {
 }
 
 int main() {
+    printf("Je tourne !");
     srand(time(NULL));
     char name[50];
     // i représente le nombre de sommets de l'instance générée
-    for (int i=10; i<1000; i+=10) {
+    for (int i=100; i<=1001; i+=100) {
         // j est la probabilité de présence d'une arete
-        for (float j = 0; j<=1; j+=0.2) {
+        for (float j = 0.2; j<=1; j+=0.2) {
             //Tous les noms de fichiers sont de la forme "nombreDeSommets_ProbabiliteDUneArete"
             sprintf(name, "%d_%.1f", i, j);
-            printf("%s\n", name);
 
             //On génère le fichier
             genererInstance(i, j, name);
