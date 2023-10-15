@@ -60,18 +60,18 @@ def lectureFichierPerso(name):
 def deepCopy(graph):
     #create a copy of graph
     graph2 = {}
-    for key in graph:
-        graph2[key] = set()
-        for val in graph[key]:
-            graph2[key].add(val)
+    for sommet, aretes in graph.items():
+        graph2[sommet] = set(aretes)
     return graph2
 
+
+
 def deleteOne(graph, sommet):
-    graph2 = deepCopy(graph)
-    #delete an arrete
-    for arrete in list(graph2[sommet]):
-        graph2[arrete].remove(sommet)
-    del graph2[sommet]
+    graph2 = {}
+    for vertex, aretes in graph.items():
+        if vertex != sommet:
+            newAretes = set(aretes) - {sommet}
+            graph2[vertex] = newAretes
     return graph2
 
 #2.2
@@ -136,17 +136,27 @@ def algo_couplage(graph):
     return C
             
 def algo_glouton(graph):
+
     graph2 = deepCopy(graph)
     C = set()
-    while sum(degreSommets(graph2))>0:
+    somme = sum(degreSommets(graph2))
+    while somme>0:      
         v = degreMaximal(graph2)
         C.add(v)
         #print(C)
-        graph2 = deleteOne(graph2, v)
+        somme -= len(graph[v]) *2
+
+        # deleteOne mais sans copie
+        start = time.time()
+        aretes_a_retirer = list(graph2[v])
+        for arete in aretes_a_retirer:
+            graph2[arete].remove(v)
+        del graph2[v]
+   
     return C
 
 
-for i in range(100, 1001, 100) :
+for i in range(1000, 10001, 1000) :
     for j in np.arange(0.2, 1, 0.2) :
 
         start = time.time()
@@ -175,6 +185,18 @@ for i in range(100, 1001, 100) :
         elapsed = end - start
 
         print(f'Temps d\'execution algo glouton : {elapsed:.5}s')
+
+# grapheTest = lectureFichierPerso("test")
+
+# start = time.time()
+# solCouplage = algo_glouton(grapheTest)
+
+# end = time.time()
+
+# print("Taille instance glouton : " + str(len(solCouplage)))
+# elapsed = end - start
+
+# print(f'Temps d\'execution algo glouton : {elapsed:.5}s')
 
 #Section 4
 

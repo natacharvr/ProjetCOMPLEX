@@ -49,7 +49,7 @@ int main() {
     srand(time(NULL));
     char name[50];
     // i représente le nombre de sommets de l'instance générée
-    for (int i=100; i<=1001; i+=100) {
+    for (int i=1000; i<=10001; i+=1000) {
         // j est la probabilité de présence d'une arete
         for (float j = 0.2; j<=1; j+=0.2) {
             //Tous les noms de fichiers sont de la forme "nombreDeSommets_ProbabiliteDUneArete"
