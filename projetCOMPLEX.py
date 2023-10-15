@@ -5,29 +5,54 @@ import re
 import random
 import time
 import math
+import numpy as np
 
 name = "exempleinstance.txt"
-file = open(name, "r")
+def lectureFichierStandard(name) :
+    file = open(name, "r")
+    lines = file.readlines()
 
-lines = file.readlines()
+    file.close()
 
-file.close()
+    NbSommet = int(lines[1])
+    graph = {}
 
-NbSommet = int(lines[1])
-graph = {}
+    for i in range(NbSommet):
+        graph[int(lines[i+3])] = set()
 
-for i in range(NbSommet):
-    graph[int(lines[i+3])] = set()
+    NbArrete = int(lines[NbSommet + 4])
 
-NbArrete = int(lines[NbSommet + 4])
-
-for i in range(NbArrete):
-    x = re.split(" ", lines[i + NbSommet + 6])
-    a = int(x[0])
-    b = int(x[1])
-    graph[a].add(b)
-    graph[b].add(a)
+    for i in range(NbArrete):
+        x = re.split(" ", lines[i + NbSommet + 6])
+        a = int(x[0])
+        b = int(x[1])
+        graph[a].add(b)
+        graph[b].add(a)
+    return graph
     
+    #fonction définie pour étudier les fichiers générés par le code c
+def lectureFichierPerso(name):
+    file = open(name, "r")
+    lines = file.readlines()
+
+    file.close()
+
+    NbSommet = int(lines[1])
+    graph = {}
+
+    for i in range(NbSommet):
+        graph[int(lines[i+3])] = set()
+
+    # Dans nos fichiers, le nombre d'arêtes est écrit en dernière ligne
+    NbArrete = int(lines[-1])
+
+    for i in range(NbArrete):
+        x = re.split(" ", lines[i + NbSommet + 4])
+        a = int(x[0])
+        b = int(x[1])
+        graph[a].add(b)
+        graph[b].add(a)
+    return graph
 #print(graph)
 
 #2.1 delete a sommet
@@ -57,7 +82,7 @@ def deleteSet(graph, mySet):
         graph2 = deleteOne(graph2, sommet)
     return graph2
 
-graph2 = deleteSet(graph, {1,2,3})
+# graph2 = deleteSet(graph, {1,2,3})
 #print(graph2)
 
 #2.3 degré des sommets
@@ -78,7 +103,7 @@ def degreMaximal(graph):
     idMax = liste.index(maxDegre)
     return list(graph.keys())[idMax]
 
-#Génération d'instances
+#Génération d'instances (à éviter, plutôt utiliser le code c pour plus de rapidité)
 
 def createGraph(n, p):
     newGraph = {}
@@ -121,23 +146,36 @@ def algo_glouton(graph):
         graph2 = deleteOne(graph2, v)
     return C
 
-#start = time.time()
+for i in range(10, 1000, 10) :
+    for j in np.arange(0, 1, 0.2) :
 
-#print("algo_couplage : ", algo_couplage(generatedGraph))
+        start = time.time()
+        graphLu = lectureFichierPerso(str(i) + "_" + f'{j:.1f}')
 
-#end = time.time()
-#elapsed = end - start
+        end = time.time()
+        elapsed = end - start
 
-#print(f'Temps d\'exécution algo couplage : {elapsed:.2}ms')
+        print(str(i) + "_" + f'{j:.1f}' + f'Temps d\'exécution lecture : {elapsed:.5}ms')
 
-#start = time.time()
+        start = time.time()
+        solCouplage = algo_couplage(graphLu)
+        # print("algo_couplage : ", )
 
-#print("algo_glouton : ", algo_glouton(generatedGraph))
+        end = time.time()
 
-#end = time.time()
-#elapsed = end - start
+        print("Taille instance couplage : " + str(len(solCouplage)))
+        elapsed = end - start
 
-#print(f'Temps d\'exécution algo glouton : {elapsed:.2}ms')
+        print(f'Temps d\'exécution algo couplage : {elapsed:.5}ms')
+
+        start = time.time()
+        solGlouton = algo_glouton(graphLu)
+        end = time.time()
+
+        print("Taille instance glouton : " + str(len(solGlouton)))
+        elapsed = end - start
+
+        print(f'Temps d\'exécution algo glouton : {elapsed:.5}ms')
 
 #Section 4
 
@@ -179,7 +217,7 @@ def etudierSommet(graph, sommet):
     else:
         return [1, [sommet]]
     
-graph = {0: {1, 3, 4}, 1: {0, 2}, 2: {1}, 3: {0}, 4: {0}}
+# graph = {0: {1, 3, 4}, 1: {0, 2}, 2: {1}, 3: {0}, 4: {0}}
 #print("solution : ", branchement(graph))
 
 #question 2
@@ -241,4 +279,4 @@ def maxB(graph):
 
     b1 = math.ceil(m/delta)
 
-print("solution : ", branchementCouplage(graph))
+# print("solution : ", branchementCouplage(graph))
