@@ -136,57 +136,58 @@ def algo_couplage(graph):
     return C
             
 def algo_glouton(graph):
-
     graph2 = deepCopy(graph)
     C = set()
     somme = sum(degreSommets(graph2))
     while somme>0:      
         v = degreMaximal(graph2)
         C.add(v)
-        #print(C)
-        somme -= len(graph[v]) *2
+        somme -= len(graph2[v]) *2
 
         # deleteOne mais sans copie
-        start = time.time()
+        
         aretes_a_retirer = list(graph2[v])
         for arete in aretes_a_retirer:
             graph2[arete].remove(v)
         del graph2[v]
-   
+
+        #Juste une sécurité (normalement inutile)
+        # if somme == 0 : 
+        #     somme = sum(degreSommets(graph2))
     return C
 
 
-for i in range(1000, 10001, 1000) :
-    for j in np.arange(0.2, 1, 0.2) :
+for i in range(10000, 10001, 1000) :
+   for j in np.arange(0.2, 1, 0.3) :
 
-        start = time.time()
-        graphLu = lectureFichierPerso(str(i) + "_" + f'{j:.1f}')
+       start = time.time()
+       graphLu = lectureFichierPerso(str(i) + "_" + f'{j:.1f}')
 
-        end = time.time()
-        elapsed = end - start
+       end = time.time()
+       elapsed = end - start
 
-        print(str(i) + "_" + f'{j:.1f}' + f'Temps d\'execution lecture : {elapsed:.5}ms')
+       print(str(i) + "_" + f'{j:.1f}' + f'Temps d\'execution lecture : {elapsed:.5}ms')
 
-        start = time.time()
-        solCouplage = algo_couplage(graphLu)
+       start = time.time()
+       solCouplage = algo_couplage(graphLu)
 
-        end = time.time()
+       end = time.time()
 
-        print("Taille instance couplage : " + str(len(solCouplage)))
-        elapsed = end - start
+       print("Taille instance couplage : " + str(len(solCouplage)))
+       elapsed = end - start
 
-        print(f'Temps d\'execution algo couplage : {elapsed:.5}s')
+       print(f'Temps d\'execution algo couplage : {elapsed:.5}s')
 
-        start = time.time()
-        solGlouton = algo_glouton(graphLu)
-        end = time.time()
+       start = time.time()
+       solGlouton = algo_glouton(graphLu)
+       end = time.time()
 
-        print("Taille instance glouton : " + str(len(solGlouton)))
-        elapsed = end - start
+       print("Taille instance glouton : " + str(len(solGlouton)))
+       elapsed = end - start
 
-        print(f'Temps d\'execution algo glouton : {elapsed:.5}s')
+       print(f'Temps d\'execution algo glouton : {elapsed:.5}s')
 
-# grapheTest = lectureFichierPerso("test")
+# grapheTest = createGraph(5000, 0.6)
 
 # start = time.time()
 # solCouplage = algo_glouton(grapheTest)
