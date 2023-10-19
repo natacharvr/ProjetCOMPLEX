@@ -49,11 +49,11 @@ int main() {
     srand(time(NULL));
     char name[50];
     // i représente le nombre de sommets de l'instance générée
-    for (int i=1000; i<=10001; i+=1000) {
+    for (int i=1000; i<=5001; i+=1000) {
         // j est la probabilité de présence d'une arete
-        for (float j = 0.2; j<=1; j+=0.2) {
+        for (float j = 0.05; j<=0.2; j+=0.05) {
             //Tous les noms de fichiers sont de la forme "nombreDeSommets_ProbabiliteDUneArete"
-            sprintf(name, "%d_%.1f", i, j);
+            sprintf(name, "%d_%.2f", i, j);
 
             //On génère le fichier
             genererInstance(i, j, name);

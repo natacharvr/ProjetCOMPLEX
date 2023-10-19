@@ -1,0 +1,75 @@
+1000_0.05
+Taille instance couplage : 986
+Temps d'execution algo couplage : 0.015622s
+Taille instance glouton : 915
+Temps d'execution algo glouton : 0.10935s
+1000_0.10
+Taille instance couplage : 990
+Temps d'execution algo couplage : 0.0s
+Taille instance glouton : 950
+Temps d'execution algo glouton : 0.16273s
+1000_0.15
+Taille instance couplage : 994
+Temps d'execution algo couplage : 0.013298s
+Taille instance glouton : 964
+Temps d'execution algo glouton : 0.16215s
+2000_0.05
+Taille instance couplage : 1986
+Temps d'execution algo couplage : 0.031285s
+Taille instance glouton : 1894
+Temps d'execution algo glouton : 0.49217s
+2000_0.10
+Taille instance couplage : 1996
+Temps d'execution algo couplage : 0.046834s
+Taille instance glouton : 1947
+Temps d'execution algo glouton : 0.51554s
+2000_0.15
+Taille instance couplage : 1996
+Temps d'execution algo couplage : 0.10209s
+Taille instance glouton : 1965
+Temps d'execution algo glouton : 0.76683s
+3000_0.05
+Taille instance couplage : 2984
+Temps d'execution algo couplage : 0.084148s
+Taille instance glouton : 2892
+Temps d'execution algo glouton : 1.1992s
+3000_0.10
+Taille instance couplage : 2996
+Temps d'execution algo couplage : 0.26274s
+Taille instance glouton : 2946
+Temps d'execution algo glouton : 2.0178s
+3000_0.15
+Taille instance couplage : 2996
+Temps d'execution algo couplage : 0.17184s
+Taille instance glouton : 2961
+Temps d'execution algo glouton : 1.6505s
+4000_0.05
+Taille instance couplage : 3986
+Temps d'execution algo couplage : 0.093697s
+Taille instance glouton : 3892
+Temps d'execution algo glouton : 1.9227s
+4000_0.10
+Taille instance couplage : 3994
+Temps d'execution algo couplage : 0.20304s
+Taille instance glouton : 3937
+Temps d'execution algo glouton : 2.3122s
+4000_0.15
+Taille instance couplage : 3994
+Temps d'execution algo couplage : 0.30882s
+Taille instance glouton : 3962
+Temps d'execution algo glouton : 2.8289s
+5000_0.05
+Taille instance couplage : 4984
+Temps d'execution algo couplage : 0.18967s
+Taille instance glouton : 4889
+Temps d'execution algo glouton : 3.0224s
+5000_0.10
+Taille instance couplage : 4988
+Temps d'execution algo couplage : 0.38506s
+Taille instance glouton : 4944
+Temps d'execution algo glouton : 5.0835s
+5000_0.15
+Taille instance couplage : 4998
+Temps d'execution algo couplage : 0.49969s
+Taille instance glouton : 4960
+Temps d'execution algo glouton : 5.8091s

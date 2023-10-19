@@ -1,6 +1,3 @@
-
-#parsing file and creating graph
-
 import re
 import random
 import time
@@ -158,36 +155,38 @@ def algo_glouton(graph):
         #     somme = sum(degreSommets(graph2))
     return C
 
-
-for i in range(10000, 10001, 1000) :
-   for j in np.arange(0.2, 1, 0.3) :
+name = "values5.txt"
+f = open(name, "w")
+for i in range(1000, 5001, 1000) :
+    for j in np.arange(0.05, 0.19, 0.05) :
 
        start = time.time()
-       graphLu = lectureFichierPerso(str(i) + "_" + f'{j:.1f}')
+       graphLu = lectureFichierPerso(str(i) + "_" + f'{j:.2f}')
 
        end = time.time()
        elapsed = end - start
 
-       print(str(i) + "_" + f'{j:.1f}' + f'Temps d\'execution lecture : {elapsed:.5}ms')
+       f.write(str(i) + "_" + f'{j:.2f}'+"\n")
 
        start = time.time()
        solCouplage = algo_couplage(graphLu)
 
        end = time.time()
 
-       print("Taille instance couplage : " + str(len(solCouplage)))
+       f.write("Taille instance couplage : " + str(len(solCouplage[0]))+'\n')
        elapsed = end - start
 
-       print(f'Temps d\'execution algo couplage : {elapsed:.5}s')
+       f.write(f'Temps d\'execution algo couplage : {elapsed:.5}s'+"\n")
 
        start = time.time()
        solGlouton = algo_glouton(graphLu)
        end = time.time()
 
-       print("Taille instance glouton : " + str(len(solGlouton)))
+       f.write("Taille instance glouton : " + str(len(solGlouton))+"\n")
        elapsed = end - start
 
-       print(f'Temps d\'execution algo glouton : {elapsed:.5}s')
+       f.write(f'Temps d\'execution algo glouton : {elapsed:.5}s'+ "\n")
+f.close()
 
 # grapheTest = createGraph(5000, 0.6)
 
@@ -224,7 +223,7 @@ def branchement(graph):
             return d
     else:
         # Il n'y a plus d'arêtes à étudier, la couveture es de taille 0
-        return 0
+        return [0, []]
     
 def etudierSommet(graph, sommet):
     myGraph = deleteOne(graph, sommet) # On supprime le sommet donné
@@ -276,7 +275,7 @@ def branchementCouplage(graph):
             return d
     else:
         # Il n'y a pas d'arêtes à étudier, la couveture es de taille 0
-        return 0
+        return [0, []]
 
     
 def etudierSommetCouplage(graph, sommet, profondeur):
@@ -332,21 +331,206 @@ def maxB(graph, couplage):
 
 
 # graph = {0: {2}, 1: {3, 4}, 2: {0}, 3: {1, 4}, 4: {1, 3}}
-graph = createGraph(28, 0.5)
-start = time.time()
-a = branchementCouplage(graph)
-end = time.time()
+# graph = createGraph(28, 0.5)
+# start = time.time()
+# a = branchementCouplage(graph)
+# end = time.time()
 
-elapsed = end - start
+# elapsed = end - start
 
-print(f'Temps d\'execution algo pas naif : {elapsed:.5}s')
-print("solution pas naive :", a)
+# print(f'Temps d\'execution algo pas naif : {elapsed:.5}s')
+# print("solution pas naive :", a)
 
-start = time.time()
-a = branchement(graph)
-end = time.time()
+# start = time.time()
+# a = branchement(graph)
+# end = time.time()
 
-elapsed = end - start
+# elapsed = end - start
 
-print(f'Temps d\'execution algo naif : {elapsed:.5}s')
-print("solution naive :", a)
+# print(f'Temps d\'execution algo naif : {elapsed:.5}s')
+# print("solution naive :", a)
+
+
+# section 4.3
+
+UB_ameliore = math.inf
+
+def branchementCouplageAmeliore(graph):
+    selectedArete = 0
+    
+    # On selectionne une arête 
+    for sommet in graph.keys():
+        if len(graph[sommet]) != 0:
+            selectedArete = [sommet, min(graph[sommet])]
+            break
+    if selectedArete :
+        #Il y a des arêtes, on crée un noeud avec le sommet gauche en moins et un autre avec le sommet droit en moins
+        g = etudierSommetCouplageAmeliore(graph, [selectedArete[0]], 1) 
+
+        d = etudierSommetCouplageAmeliore(graph, list(graph[selectedArete[0]]), len(graph[selectedArete[0]])) #on passe une liste de toujs les sommets reliés à u
+        # print("g: ", g, "d: ", d)
+        #Si la solution de gauche est la meilleure, on la renvoie, l'autre sinon
+        if min(g[0], d[0]) == g[0] :
+            return g
+        else:
+            return d
+    else:
+        # Il n'y a pas d'arêtes à étudier, la couveture est de taille 0
+        return [0, []]
+
+    
+def etudierSommetCouplageAmeliore(graph, sommets, profondeur):
+    myGraph = deleteSet(graph, sommets) # On supprime le sommet donné
+    selectedArete = 0
+    # On selectionne une arête 
+    for sommetEtudie in myGraph.keys():
+        if len(myGraph[sommetEtudie]) != 0:
+            selectedArete = [sommetEtudie, min(myGraph[sommetEtudie])]
+            break
+    if selectedArete :
+        #Calcul des bornes sup et bornes inf
+        couplage = algo_couplage(myGraph)
+        borne_min = maxB(myGraph, couplage)
+        global UB_ameliore
+        if (borne_min+profondeur > UB_ameliore) : 
+            return [math.inf, []] # La branche n'est pas intéressante
+        
+        borne_sup = len(couplage[0])
+
+        if (borne_sup+profondeur <= UB_ameliore) :
+            UB_ameliore = borne_sup+profondeur #On a trouvé une meilleure solution
+        #Il y a des arêtes, on crée un noeud avec le sommet gauche en moins et un autre avec tous ses voisins
+        g = etudierSommetCouplageAmeliore(myGraph, [selectedArete[0]], profondeur+1)
+        d = etudierSommetCouplageAmeliore(myGraph, list(myGraph[selectedArete[0]]), profondeur+len(myGraph[selectedArete[0]]))
+
+
+        #Si la solution de gauche est la meilleure, on la renvoie, l'autre sinon
+        if min(g[0], d[0]) == g[0] :
+            return [g[0] + len(sommets), g[1] + sommets]
+        else:
+            return [d[0] + len(sommets), d[1]+ sommets]
+    else:
+        # Il n'y a plus d'arêtes à étudier, la couveture es de taille 1, le sommet retiré
+        return [len(sommets), sommets]
+    
+# graph = createGraph(100, 0.1)
+# print(graph)
+# print("version améliorée : ",branchementCouplageAmeliore(graph))
+# print("version de base ",branchementCouplage(graph))
+
+# graph = createGraph(28, 0.5)
+# start = time.time()
+# # a = branchementCouplage(graph)
+# end = time.time()
+
+# elapsed = end - start
+
+# print(f'Temps d\'execution algo pas naif : {elapsed:.5}s')
+# # print("solution pas naive :", a)
+
+# start = time.time()
+# a = branchementCouplageAmeliore(graph)
+# end = time.time()
+
+# elapsed = end - start
+
+# print(f'Temps d\'execution algo ameliore : {elapsed:.5}s')
+# print("solution :", a)
+
+# 4.3 question 2
+
+UB_ameliore2 = math.inf
+
+def branchementCouplageAmeliore2(graph):
+    # selectedArete = 0
+    
+    # On selectionne le sommet maximal
+    u = degreMaximal(graph)
+    
+    if len(graph[u]) > 0 :
+        #Il y a des arêtes, on crée un noeud avec le sommet gauche en moins et un autre avec le sommet droit en moins
+        g = etudierSommetCouplageAmeliore2(graph, [u], 1) 
+
+        d = etudierSommetCouplageAmeliore2(graph, list(graph[u]), len(graph[u])) #on passe une liste de toujs les sommets reliés à u
+        # print("g: ", g, "d: ", d)
+        #Si la solution de gauche est la meilleure, on la renvoie, l'autre sinon
+        if min(g[0], d[0]) == g[0] :
+            return g
+        else:
+            return d
+    else:
+        # Il n'y a pas d'arêtes à étudier, la couveture es de taille 0
+        return [0, []]
+
+    
+def etudierSommetCouplageAmeliore2(graph, sommets, profondeur):
+    myGraph = deleteSet(graph, sommets) # On supprime le sommet donné
+    
+    u = degreMaximal(myGraph)
+    if len(myGraph[u]) > 0 :
+        #Calcul des bornes sup et bornes inf
+        couplage = algo_couplage(myGraph)
+        borne_min = maxB(myGraph, couplage)
+        global UB_ameliore2
+        if (borne_min+profondeur > UB_ameliore2) : 
+            return [math.inf, []] # La branche n'est pas intéressante
+        
+        borne_sup = len(couplage[0])
+
+        if (borne_sup+profondeur <= UB_ameliore2) :
+            UB_ameliore2 = borne_sup+profondeur #On a trouvé une meilleure solution
+        #Il y a des arêtes, on crée un noeud avec le sommet gauche en moins et un autre avec tous ses voisins
+        g = etudierSommetCouplageAmeliore2(myGraph, [u], profondeur+1)
+        d = etudierSommetCouplageAmeliore2(myGraph, list(myGraph[u]), profondeur+len(myGraph[u]))
+
+
+        #Si la solution de gauche est la meilleure, on la renvoie, l'autre sinon
+        if min(g[0], d[0]) == g[0] :
+            return [g[0] + len(sommets), g[1] + sommets]
+        else:
+            return [d[0] + len(sommets), d[1]+ sommets]
+    else:
+        # Il n'y a plus d'arêtes à étudier, la couveture es de taille 1, le sommet retiré
+        return [len(sommets), sommets]
+    
+
+
+# for i in range(20, 100) :
+#     for p in np.arange(0.2, 1, 0.3) :
+
+#         print("i = ", i , " p = ", p, "\n")
+#         graph = createGraph(i, p)
+
+#         start = time.time()
+#         a = branchementCouplageAmeliore(graph)
+#         end = time.time()
+#         elapsed = end - start
+#         print(f'Temps d\'execution algo ameliore : {elapsed:.5}s')
+#         print("solution algo ameliore:", a[0])
+
+#         start = time.time()
+#         a = branchementCouplageAmeliore2(graph)
+#         end = time.time()
+#         elapsed = end - start
+#         print(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s')
+#         print("solution ameliore 2:", a[0])
+
+#         # start = time.time()
+#         # a = branchement(graph)
+#         # end = time.time()
+#         # elapsed = end - start
+#         # print(f'Temps d\'execution algo naif : {elapsed:.5}s')
+#         # print("solution naive :", a)
+
+#         # start = time.time()
+#         # a = branchementCouplage(graph)
+#         # end = time.time()
+#         # print(f'Temps d\'execution algo pas naif : {elapsed:.15}s')
+#         # elapsed = end - start
+#         # print("solution pas naive :", a[0])
+
+#         print("\n\n\n")
+
+#         UB = math.inf
+#         UB_ameliore = math.inf
+#         UB_ameliore2 = math.inf
