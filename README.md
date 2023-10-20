@@ -50,7 +50,20 @@ Donc l'algorithme glouton n'est pas optimal. Le facteur d'approximation est $4\o
 Par conséquent, dans ce cas, l'algorithme n'est pas $7\over6$-approchée.
 
 ### Question 2
-TODO faire des graphes à partir des valeurs calculées
+Comparaison ( Glouton VS Couplage ):
+
+Temps de calcul :
+L'algorithme "couplage" semble être plus rapide que l'algorithme "glouton" pour toutes les instances de taille n et pour tous les niveaux de p. Les temps d'exécution de l'algorithme "couplage" (exprimés en secondes) augmentent généralement de manière linéaire avec la taille de l'instance n et restent relativement faibles, même pour de grandes instances. D'autre part, les temps d'exécution de l'algorithme "glouton" augmentent plus rapidement avec n et p, et ils deviennent substantiels pour des instances plus grandes. Cela suggère que l'algorithme "couplage" est plus efficace sur le plan du temps de calcul.
+
+Efficacite:
+le comportement des deux méthodes dépend de la valeur de la probabilité p. Lorsque p est très petite, la "Méthode du couplage maximal" peut être un peu plus efficace pour capturer des arêtes rares, tandis que l'"Algorithme glouton" peut également avoir des difficultés. tandis que pour des graphes plus denses, les deux méthodes peuvent donner des résultats similaires. La performance dépendra de la distribution des arêtes dans le graphe en fonction de la probabilité p.
+
+![Couplage](plots/couplage_time.png)
+
+![Glouton](plots/glouton_time.png)
+
+![Efficacité](plots/efficacite_size.png)
+
 
 ## 4. Séparation et évaluation
 
