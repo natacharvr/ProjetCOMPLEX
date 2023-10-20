@@ -50,17 +50,18 @@ Donc l'algorithme glouton n'est pas optimal. Le facteur d'approximation est $4\o
 Par conséquent, dans ce cas, l'algorithme n'est pas $7\over6$-approchée.
 
 ### Question 2
-Comparaison ( Glouton VS Couplage ):
+#### Comparaison ( Glouton VS Couplage ):
 
-Temps de calcul :
+##### Temps de calcul :
 L'algorithme "couplage" semble être plus rapide que l'algorithme "glouton" pour toutes les instances de taille n et pour tous les niveaux de p. Les temps d'exécution de l'algorithme "couplage" (exprimés en secondes) augmentent généralement de manière linéaire avec la taille de l'instance n et restent relativement faibles, même pour de grandes instances. D'autre part, les temps d'exécution de l'algorithme "glouton" augmentent plus rapidement avec n et p, et ils deviennent substantiels pour des instances plus grandes. Cela suggère que l'algorithme "couplage" est plus efficace sur le plan du temps de calcul.
-
-Efficacite:
-le comportement des deux méthodes dépend de la valeur de la probabilité p. Lorsque p est très petite, la "Méthode du couplage maximal" peut être un peu plus efficace pour capturer des arêtes rares, tandis que l'"Algorithme glouton" peut également avoir des difficultés. tandis que pour des graphes plus denses, les deux méthodes peuvent donner des résultats similaires. La performance dépendra de la distribution des arêtes dans le graphe en fonction de la probabilité p.
 
 ![Couplage](plots/couplage_time.png)
 
 ![Glouton](plots/glouton_time.png)
+
+##### Efficacité:
+le comportement des deux méthodes dépend de la valeur de la probabilité p. Lorsque p est très petite, la "Méthode du couplage" peut être un peu moins efficace pour capturer des arêtes rares, tandis que pour des graphes plus denses (valeur plus grande de p), les deux méthodes peuvent donner des résultats similaires. La performance dépendra de la distribution des arêtes dans le graphe en fonction de la probabilité p.
+
 
 ![Efficacité](plots/efficacite_size.png)
 
@@ -68,7 +69,14 @@ le comportement des deux méthodes dépend de la valeur de la probabilité p. Lo
 ## 4. Séparation et évaluation
 
 #### Question 2
-TODO benchmark
+
+#### Algo Branchement basique:                
+##### Temps d'exécution : 
+Les temps d'exécution varient en fonction de la taille de l'instance "i" et de la probabilité de présence des arêtes "p". Il est généralement plus lent pour les valeurs élevées de "p". Les temps d'exécution vont de quelques millisecondes à plusieurs secondes.
+##### Efficacité :
+L'algo parvient à fournir la solution optimale. Cela signifie qu'il est capable de trouver la meilleure solution possible pour le problème donné.
+
+![Branchement](plots/.png)
 
 ### 4.2 Ajout de bornes
 #### Question 1
@@ -108,3 +116,26 @@ TODO
 #### Question 2 :
 TODO
 
+#### Question 3 :
+
+#### Branchement amélioré 1: 
+( prendre tous les voisins dans la 2eme branche )
+
+##### Temps d'exécution : 
+L'algorithme présente un temps d'exécution très faible, proche de zéro, pour la plupart des instances testées. Cela suggère une amélioration significative par rapport à l'algorithme de base, qui avait des temps d'exécution plus longs.
+
+##### Efficacité : 
+L'algorithme est toujours capable de produire des solutions optimales, dans un temps d'exécution très court.
+
+![Branchement amelioré 1](plots/.png)
+
+#### Branchement amélioré 2: 
+( choisir le branchement de maniere à ce que le sommet soit de degre maximum )
+
+##### Temps d'exécution : 
+L'algorithme "Amélioré 1" et l'algorithme "Amélioré 2" affichent des temps d'exécution similaires, la plupart du temps proches de zéro. Cependant, "Amélioré 2" est légèrement plus rapide dans certains cas.
+
+##### Efficacité : 
+En ce qui concerne la qualité des solutions, les deux donnent des résultats similaires.
+
+![Branchement amelioré 2](plots/.png)
