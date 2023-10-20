@@ -139,3 +139,9 @@ L'algorithme "Amélioré 1" et l'algorithme "Amélioré 2" affichent des temps d
 En ce qui concerne la qualité des solutions, les deux donnent des résultats similaires.
 
 ![Branchement amelioré 2](plots/.png)
+
+#### Question 4 :
+
+Les algorithmes de couplage et glouton présentent généralement des rapports d'approximation élevés, proches de 1. Même lorsque la taille de l'instance "n" varie, les rapports d'approximation restent globalement performants, avec de légères fluctuations. Les pires rapports d'approximation observés étaient toujours proches de 1, confirmant la fiabilité de ces algorithmes pour résoudre le problème.
+
+![rapport aprox](plots/rapportAprox.png)
