@@ -1,0 +1,1600 @@
+1_0.2
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+1_0.4
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+1_0.6000000000000001
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+1_0.8
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+2_0.2
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+2_0.4
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+2_0.6000000000000001
+algo couplage : 2
+algo glouton : 1
+solution ameliore 2:1
+2_0.8
+algo couplage : 2
+algo glouton : 1
+solution ameliore 2:1
+3_0.2
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+3_0.4
+algo couplage : 2
+algo glouton : 1
+solution ameliore 2:1
+3_0.6000000000000001
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+3_0.8
+algo couplage : 2
+algo glouton : 2
+solution ameliore 2:2
+4_0.2
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+4_0.4
+algo couplage : 4
+algo glouton : 2
+solution ameliore 2:2
+4_0.6000000000000001
+algo couplage : 4
+algo glouton : 2
+solution ameliore 2:2
+4_0.8
+algo couplage : 4
+algo glouton : 3
+solution ameliore 2:3
+5_0.2
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+5_0.4
+algo couplage : 4
+algo glouton : 2
+solution ameliore 2:2
+5_0.6000000000000001
+algo couplage : 4
+algo glouton : 2
+solution ameliore 2:2
+5_0.8
+algo couplage : 4
+algo glouton : 3
+solution ameliore 2:3
+6_0.2
+algo couplage : 0
+algo glouton : 0
+solution ameliore 2:0
+6_0.4
+algo couplage : 4
+algo glouton : 2
+solution ameliore 2:2
+6_0.6000000000000001
+algo couplage : 4
+algo glouton : 3
+solution ameliore 2:3
+6_0.8
+algo couplage : 6
+algo glouton : 3
+solution ameliore 2:3
+7_0.2
+algo couplage : 6
+algo glouton : 4
+solution ameliore 2:4
+7_0.4
+algo couplage : 6
+algo glouton : 3
+solution ameliore 2:3
+7_0.6000000000000001
+algo couplage : 6
+algo glouton : 3
+solution ameliore 2:3
+7_0.8
+algo couplage : 6
+algo glouton : 4
+solution ameliore 2:4
+8_0.2
+algo couplage : 8
+algo glouton : 4
+solution ameliore 2:4
+8_0.4
+algo couplage : 6
+algo glouton : 5
+solution ameliore 2:5
+8_0.6000000000000001
+algo couplage : 8
+algo glouton : 5
+solution ameliore 2:5
+8_0.8
+algo couplage : 8
+algo glouton : 6
+solution ameliore 2:6
+9_0.2
+algo couplage : 6
+algo glouton : 3
+solution ameliore 2:3
+9_0.4
+algo couplage : 8
+algo glouton : 5
+solution ameliore 2:5
+9_0.6000000000000001
+algo couplage : 8
+algo glouton : 6
+solution ameliore 2:6
+9_0.8
+algo couplage : 8
+algo glouton : 7
+solution ameliore 2:7
+10_0.2
+algo couplage : 8
+algo glouton : 4
+solution ameliore 2:4
+10_0.4
+algo couplage : 8
+algo glouton : 5
+solution ameliore 2:5
+10_0.6000000000000001
+algo couplage : 8
+algo glouton : 6
+solution ameliore 2:6
+10_0.8
+algo couplage : 10
+algo glouton : 7
+solution ameliore 2:7
+11_0.2
+algo couplage : 8
+algo glouton : 5
+solution ameliore 2:5
+11_0.4
+algo couplage : 8
+algo glouton : 5
+solution ameliore 2:5
+11_0.6000000000000001
+algo couplage : 8
+algo glouton : 7
+solution ameliore 2:7
+11_0.8
+algo couplage : 10
+algo glouton : 7
+solution ameliore 2:7
+12_0.2
+algo couplage : 10
+algo glouton : 6
+solution ameliore 2:6
+12_0.4
+algo couplage : 12
+algo glouton : 9
+solution ameliore 2:8
+12_0.6000000000000001
+algo couplage : 10
+algo glouton : 8
+solution ameliore 2:8
+12_0.8
+algo couplage : 10
+algo glouton : 10
+solution ameliore 2:10
+13_0.2
+algo couplage : 8
+algo glouton : 6
+solution ameliore 2:6
+13_0.4
+algo couplage : 10
+algo glouton : 9
+solution ameliore 2:9
+13_0.6000000000000001
+algo couplage : 12
+algo glouton : 9
+solution ameliore 2:9
+13_0.8
+algo couplage : 12
+algo glouton : 10
+solution ameliore 2:10
+14_0.2
+algo couplage : 12
+algo glouton : 8
+solution ameliore 2:7
+14_0.4
+algo couplage : 14
+algo glouton : 9
+solution ameliore 2:9
+14_0.6000000000000001
+algo couplage : 14
+algo glouton : 10
+solution ameliore 2:10
+14_0.8
+algo couplage : 14
+algo glouton : 11
+solution ameliore 2:11
+15_0.2
+algo couplage : 12
+algo glouton : 7
+solution ameliore 2:7
+15_0.4
+algo couplage : 12
+algo glouton : 11
+solution ameliore 2:10
+15_0.6000000000000001
+algo couplage : 14
+algo glouton : 11
+solution ameliore 2:11
+15_0.8
+algo couplage : 14
+algo glouton : 12
+solution ameliore 2:11
+16_0.2
+algo couplage : 16
+algo glouton : 10
+solution ameliore 2:9
+16_0.4
+algo couplage : 14
+algo glouton : 11
+solution ameliore 2:10
+16_0.6000000000000001
+algo couplage : 14
+algo glouton : 12
+solution ameliore 2:12
+16_0.8
+algo couplage : 14
+algo glouton : 13
+solution ameliore 2:13
+17_0.2
+algo couplage : 12
+algo glouton : 7
+solution ameliore 2:7
+17_0.4
+algo couplage : 14
+algo glouton : 11
+solution ameliore 2:11
+17_0.6000000000000001
+algo couplage : 16
+algo glouton : 13
+solution ameliore 2:13
+17_0.8
+algo couplage : 16
+algo glouton : 14
+solution ameliore 2:14
+18_0.2
+algo couplage : 14
+algo glouton : 10
+solution ameliore 2:10
+18_0.4
+algo couplage : 16
+algo glouton : 13
+solution ameliore 2:12
+18_0.6000000000000001
+algo couplage : 18
+algo glouton : 14
+solution ameliore 2:13
+18_0.8
+algo couplage : 18
+algo glouton : 16
+solution ameliore 2:15
+19_0.2
+algo couplage : 18
+algo glouton : 11
+solution ameliore 2:11
+19_0.4
+algo couplage : 18
+algo glouton : 14
+solution ameliore 2:13
+19_0.6000000000000001
+algo couplage : 18
+algo glouton : 15
+solution ameliore 2:15
+19_0.8
+algo couplage : 18
+algo glouton : 17
+solution ameliore 2:16
+20_0.2
+algo couplage : 16
+algo glouton : 12
+solution ameliore 2:11
+20_0.4
+algo couplage : 18
+algo glouton : 15
+solution ameliore 2:14
+20_0.6000000000000001
+algo couplage : 18
+algo glouton : 17
+solution ameliore 2:16
+20_0.8
+algo couplage : 20
+algo glouton : 17
+solution ameliore 2:17
+21_0.2
+algo couplage : 18
+algo glouton : 13
+solution ameliore 2:12
+21_0.4
+algo couplage : 20
+algo glouton : 15
+solution ameliore 2:15
+21_0.6000000000000001
+algo couplage : 20
+algo glouton : 18
+solution ameliore 2:17
+21_0.8
+algo couplage : 20
+algo glouton : 18
+solution ameliore 2:18
+22_0.2
+algo couplage : 18
+algo glouton : 12
+solution ameliore 2:11
+22_0.4
+algo couplage : 22
+algo glouton : 16
+solution ameliore 2:15
+22_0.6000000000000001
+algo couplage : 20
+algo glouton : 18
+solution ameliore 2:17
+22_0.8
+algo couplage : 22
+algo glouton : 20
+solution ameliore 2:19
+23_0.2
+algo couplage : 20
+algo glouton : 14
+solution ameliore 2:13
+23_0.4
+algo couplage : 20
+algo glouton : 18
+solution ameliore 2:16
+23_0.6000000000000001
+algo couplage : 22
+algo glouton : 18
+solution ameliore 2:18
+23_0.8
+algo couplage : 22
+algo glouton : 20
+solution ameliore 2:20
+24_0.2
+algo couplage : 20
+algo glouton : 14
+solution ameliore 2:13
+24_0.4
+algo couplage : 22
+algo glouton : 17
+solution ameliore 2:16
+24_0.6000000000000001
+algo couplage : 24
+algo glouton : 19
+solution ameliore 2:19
+24_0.8
+algo couplage : 22
+algo glouton : 21
+solution ameliore 2:21
+25_0.2
+algo couplage : 24
+algo glouton : 17
+solution ameliore 2:16
+25_0.4
+algo couplage : 22
+algo glouton : 20
+solution ameliore 2:18
+25_0.6000000000000001
+algo couplage : 24
+algo glouton : 21
+solution ameliore 2:20
+25_0.8
+algo couplage : 24
+algo glouton : 22
+solution ameliore 2:22
+26_0.2
+algo couplage : 24
+algo glouton : 15
+solution ameliore 2:14
+26_0.4
+algo couplage : 24
+algo glouton : 19
+solution ameliore 2:19
+26_0.6000000000000001
+algo couplage : 24
+algo glouton : 21
+solution ameliore 2:20
+26_0.8
+algo couplage : 26
+algo glouton : 23
+solution ameliore 2:23
+27_0.2
+algo couplage : 22
+algo glouton : 16
+solution ameliore 2:16
+27_0.4
+algo couplage : 26
+algo glouton : 20
+solution ameliore 2:20
+27_0.6000000000000001
+algo couplage : 26
+algo glouton : 23
+solution ameliore 2:21
+27_0.8
+algo couplage : 26
+algo glouton : 24
+solution ameliore 2:23
+28_0.2
+algo couplage : 26
+algo glouton : 16
+solution ameliore 2:16
+28_0.4
+algo couplage : 28
+algo glouton : 21
+solution ameliore 2:21
+28_0.6000000000000001
+algo couplage : 26
+algo glouton : 22
+solution ameliore 2:22
+28_0.8
+algo couplage : 28
+algo glouton : 25
+solution ameliore 2:25
+29_0.2
+algo couplage : 26
+algo glouton : 17
+solution ameliore 2:17
+29_0.4
+algo couplage : 28
+algo glouton : 23
+solution ameliore 2:22
+29_0.6000000000000001
+algo couplage : 28
+algo glouton : 24
+solution ameliore 2:24
+29_0.8
+algo couplage : 28
+algo glouton : 26
+solution ameliore 2:25
+30_0.2
+algo couplage : 26
+algo glouton : 19
+solution ameliore 2:19
+30_0.4
+algo couplage : 28
+algo glouton : 23
+solution ameliore 2:22
+30_0.6000000000000001
+algo couplage : 30
+algo glouton : 25
+solution ameliore 2:25
+30_0.8
+algo couplage : 30
+algo glouton : 26
+solution ameliore 2:26
+31_0.2
+algo couplage : 28
+algo glouton : 19
+solution ameliore 2:18
+31_0.4
+algo couplage : 28
+algo glouton : 25
+solution ameliore 2:23
+31_0.6000000000000001
+algo couplage : 30
+algo glouton : 27
+solution ameliore 2:25
+31_0.8
+algo couplage : 30
+algo glouton : 28
+solution ameliore 2:27
+32_0.2
+algo couplage : 30
+algo glouton : 21
+solution ameliore 2:20
+32_0.4
+algo couplage : 30
+algo glouton : 24
+solution ameliore 2:24
+32_0.6000000000000001
+algo couplage : 32
+algo glouton : 28
+solution ameliore 2:27
+32_0.8
+algo couplage : 32
+algo glouton : 28
+solution ameliore 2:28
+33_0.2
+algo couplage : 28
+algo glouton : 23
+solution ameliore 2:21
+33_0.4
+algo couplage : 32
+algo glouton : 25
+solution ameliore 2:25
+33_0.6000000000000001
+algo couplage : 32
+algo glouton : 29
+solution ameliore 2:27
+33_0.8
+algo couplage : 32
+algo glouton : 30
+solution ameliore 2:30
+34_0.2
+algo couplage : 32
+algo glouton : 23
+solution ameliore 2:22
+34_0.4
+algo couplage : 32
+algo glouton : 26
+solution ameliore 2:26
+34_0.6000000000000001
+algo couplage : 32
+algo glouton : 29
+solution ameliore 2:29
+34_0.8
+algo couplage : 32
+algo glouton : 30
+solution ameliore 2:30
+35_0.2
+algo couplage : 32
+algo glouton : 22
+solution ameliore 2:22
+35_0.4
+algo couplage : 34
+algo glouton : 28
+solution ameliore 2:27
+35_0.6000000000000001
+algo couplage : 34
+algo glouton : 30
+solution ameliore 2:30
+35_0.8
+algo couplage : 34
+algo glouton : 32
+solution ameliore 2:31
+36_0.2
+algo couplage : 34
+algo glouton : 23
+solution ameliore 2:23
+36_0.4
+algo couplage : 36
+algo glouton : 28
+solution ameliore 2:27
+36_0.6000000000000001
+algo couplage : 36
+algo glouton : 30
+solution ameliore 2:30
+36_0.8
+algo couplage : 36
+algo glouton : 33
+solution ameliore 2:32
+37_0.2
+algo couplage : 32
+algo glouton : 23
+solution ameliore 2:23
+37_0.4
+algo couplage : 36
+algo glouton : 29
+solution ameliore 2:29
+37_0.6000000000000001
+algo couplage : 36
+algo glouton : 33
+solution ameliore 2:32
+37_0.8
+algo couplage : 36
+algo glouton : 34
+solution ameliore 2:33
+38_0.2
+algo couplage : 32
+algo glouton : 26
+solution ameliore 2:24
+38_0.4
+algo couplage : 36
+algo glouton : 29
+solution ameliore 2:29
+38_0.6000000000000001
+algo couplage : 38
+algo glouton : 33
+solution ameliore 2:32
+38_0.8
+algo couplage : 38
+algo glouton : 34
+solution ameliore 2:34
+39_0.2
+algo couplage : 36
+algo glouton : 26
+solution ameliore 2:25
+39_0.4
+algo couplage : 38
+algo glouton : 30
+solution ameliore 2:30
+39_0.6000000000000001
+algo couplage : 38
+algo glouton : 33
+solution ameliore 2:33
+39_0.8
+algo couplage : 38
+algo glouton : 35
+solution ameliore 2:35
+40_0.2
+algo couplage : 36
+algo glouton : 28
+solution ameliore 2:25
+40_0.4
+algo couplage : 38
+algo glouton : 32
+solution ameliore 2:32
+40_0.6000000000000001
+algo couplage : 40
+algo glouton : 35
+solution ameliore 2:34
+40_0.8
+algo couplage : 40
+algo glouton : 37
+solution ameliore 2:36
+41_0.2
+algo couplage : 40
+algo glouton : 29
+solution ameliore 2:28
+41_0.4
+algo couplage : 40
+algo glouton : 34
+solution ameliore 2:33
+41_0.6000000000000001
+algo couplage : 40
+algo glouton : 35
+solution ameliore 2:35
+41_0.8
+algo couplage : 40
+algo glouton : 37
+solution ameliore 2:37
+42_0.2
+algo couplage : 38
+algo glouton : 29
+solution ameliore 2:28
+42_0.4
+algo couplage : 40
+algo glouton : 35
+solution ameliore 2:34
+42_0.6000000000000001
+algo couplage : 42
+algo glouton : 37
+solution ameliore 2:36
+42_0.8
+algo couplage : 42
+algo glouton : 38
+solution ameliore 2:38
+43_0.2
+algo couplage : 42
+algo glouton : 30
+solution ameliore 2:29
+43_0.4
+algo couplage : 42
+algo glouton : 36
+solution ameliore 2:35
+43_0.6000000000000001
+algo couplage : 42
+algo glouton : 39
+solution ameliore 2:37
+43_0.8
+algo couplage : 42
+algo glouton : 40
+solution ameliore 2:39
+44_0.2
+algo couplage : 44
+algo glouton : 31
+solution ameliore 2:30
+44_0.4
+algo couplage : 44
+algo glouton : 37
+solution ameliore 2:36
+44_0.6000000000000001
+algo couplage : 44
+algo glouton : 40
+solution ameliore 2:39
+44_0.8
+algo couplage : 42
+algo glouton : 41
+solution ameliore 2:40
+45_0.2
+algo couplage : 42
+algo glouton : 30
+solution ameliore 2:30
+45_0.4
+algo couplage : 44
+algo glouton : 36
+solution ameliore 2:35
+45_0.6000000000000001
+algo couplage : 44
+algo glouton : 40
+solution ameliore 2:39
+45_0.8
+algo couplage : 44
+algo glouton : 41
+solution ameliore 2:40
+46_0.2
+algo couplage : 44
+algo glouton : 34
+solution ameliore 2:31
+46_0.4
+algo couplage : 44
+algo glouton : 37
+solution ameliore 2:36
+46_0.6000000000000001
+algo couplage : 44
+algo glouton : 41
+solution ameliore 2:40
+46_0.8
+algo couplage : 44
+algo glouton : 42
+solution ameliore 2:41
+47_0.2
+algo couplage : 44
+algo glouton : 33
+solution ameliore 2:33
+47_0.4
+algo couplage : 44
+algo glouton : 40
+solution ameliore 2:38
+47_0.6000000000000001
+algo couplage : 46
+algo glouton : 41
+solution ameliore 2:40
+47_0.8
+algo couplage : 46
+algo glouton : 43
+solution ameliore 2:43
+48_0.2
+algo couplage : 44
+algo glouton : 32
+solution ameliore 2:31
+48_0.4
+algo couplage : 48
+algo glouton : 40
+solution ameliore 2:39
+48_0.6000000000000001
+algo couplage : 46
+algo glouton : 42
+solution ameliore 2:42
+48_0.8
+algo couplage : 48
+algo glouton : 45
+solution ameliore 2:44
+49_0.2
+algo couplage : 48
+algo glouton : 38
+solution ameliore 2:35
+49_0.4
+algo couplage : 48
+algo glouton : 41
+solution ameliore 2:40
+49_0.6000000000000001
+algo couplage : 48
+algo glouton : 44
+solution ameliore 2:43
+49_0.8
+algo couplage : 48
+algo glouton : 45
+solution ameliore 2:44
+50_0.2
+algo couplage : 48
+algo glouton : 36
+solution ameliore 2:35
+50_0.4
+algo couplage : 48
+algo glouton : 43
+solution ameliore 2:41
+50_0.6000000000000001
+algo couplage : 48
+algo glouton : 45
+solution ameliore 2:44
+50_0.8
+algo couplage : 48
+algo glouton : 47
+solution ameliore 2:45
+51_0.2
+algo couplage : 48
+algo glouton : 37
+solution ameliore 2:36
+51_0.4
+algo couplage : 50
+algo glouton : 42
+solution ameliore 2:41
+51_0.6000000000000001
+algo couplage : 50
+algo glouton : 45
+solution ameliore 2:45
+51_0.8
+algo couplage : 50
+algo glouton : 48
+solution ameliore 2:47
+52_0.2
+algo couplage : 50
+algo glouton : 39
+solution ameliore 2:38
+52_0.4
+algo couplage : 48
+algo glouton : 42
+solution ameliore 2:42
+52_0.6000000000000001
+algo couplage : 52
+algo glouton : 47
+solution ameliore 2:46
+52_0.8
+algo couplage : 52
+algo glouton : 48
+solution ameliore 2:48
+53_0.2
+algo couplage : 48
+algo glouton : 39
+solution ameliore 2:39
+53_0.4
+algo couplage : 52
+algo glouton : 45
+solution ameliore 2:44
+53_0.6000000000000001
+algo couplage : 52
+algo glouton : 47
+solution ameliore 2:47
+53_0.8
+algo couplage : 52
+algo glouton : 49
+solution ameliore 2:49
+54_0.2
+algo couplage : 48
+algo glouton : 41
+solution ameliore 2:39
+54_0.4
+algo couplage : 54
+algo glouton : 47
+solution ameliore 2:45
+54_0.6000000000000001
+algo couplage : 52
+algo glouton : 48
+solution ameliore 2:48
+54_0.8
+algo couplage : 52
+algo glouton : 50
+solution ameliore 2:50
+55_0.2
+algo couplage : 50
+algo glouton : 42
+solution ameliore 2:39
+55_0.4
+algo couplage : 54
+algo glouton : 47
+solution ameliore 2:45
+55_0.6000000000000001
+algo couplage : 54
+algo glouton : 50
+solution ameliore 2:49
+55_0.8
+algo couplage : 54
+algo glouton : 52
+solution ameliore 2:51
+56_0.2
+algo couplage : 52
+algo glouton : 41
+solution ameliore 2:40
+56_0.4
+algo couplage : 54
+algo glouton : 47
+solution ameliore 2:46
+56_0.6000000000000001
+algo couplage : 56
+algo glouton : 52
+solution ameliore 2:50
+56_0.8
+algo couplage : 56
+algo glouton : 52
+solution ameliore 2:52
+57_0.2
+algo couplage : 54
+algo glouton : 41
+solution ameliore 2:40
+57_0.4
+algo couplage : 54
+algo glouton : 47
+solution ameliore 2:47
+57_0.6000000000000001
+algo couplage : 56
+algo glouton : 50
+solution ameliore 2:50
+57_0.8
+algo couplage : 56
+algo glouton : 53
+solution ameliore 2:53
+58_0.2
+algo couplage : 52
+algo glouton : 43
+solution ameliore 2:41
+58_0.4
+algo couplage : 54
+algo glouton : 50
+solution ameliore 2:48
+58_0.6000000000000001
+algo couplage : 56
+algo glouton : 52
+solution ameliore 2:51
+58_0.8
+algo couplage : 58
+algo glouton : 54
+solution ameliore 2:53
+59_0.2
+algo couplage : 56
+algo glouton : 46
+solution ameliore 2:44
+59_0.4
+algo couplage : 56
+algo glouton : 50
+solution ameliore 2:49
+59_0.6000000000000001
+algo couplage : 58
+algo glouton : 54
+solution ameliore 2:52
+59_0.8
+algo couplage : 58
+algo glouton : 55
+solution ameliore 2:54
+60_0.2
+algo couplage : 56
+algo glouton : 45
+solution ameliore 2:44
+60_0.4
+algo couplage : 56
+algo glouton : 52
+solution ameliore 2:51
+60_0.6000000000000001
+algo couplage : 60
+algo glouton : 55
+solution ameliore 2:54
+60_0.8
+algo couplage : 60
+algo glouton : 57
+solution ameliore 2:56
+61_0.2
+algo couplage : 60
+algo glouton : 48
+solution ameliore 2:44
+61_0.4
+algo couplage : 60
+algo glouton : 54
+solution ameliore 2:51
+61_0.6000000000000001
+algo couplage : 60
+algo glouton : 55
+solution ameliore 2:54
+61_0.8
+algo couplage : 60
+algo glouton : 57
+solution ameliore 2:57
+62_0.2
+algo couplage : 58
+algo glouton : 48
+solution ameliore 2:46
+62_0.4
+algo couplage : 60
+algo glouton : 52
+solution ameliore 2:52
+62_0.6000000000000001
+algo couplage : 62
+algo glouton : 57
+solution ameliore 2:54
+62_0.8
+algo couplage : 62
+algo glouton : 58
+solution ameliore 2:57
+63_0.2
+algo couplage : 56
+algo glouton : 48
+solution ameliore 2:46
+63_0.4
+algo couplage : 60
+algo glouton : 54
+solution ameliore 2:53
+63_0.6000000000000001
+algo couplage : 62
+algo glouton : 57
+solution ameliore 2:57
+63_0.8
+algo couplage : 62
+algo glouton : 59
+solution ameliore 2:59
+64_0.2
+algo couplage : 62
+algo glouton : 51
+solution ameliore 2:47
+64_0.4
+algo couplage : 62
+algo glouton : 54
+solution ameliore 2:54
+64_0.6000000000000001
+algo couplage : 64
+algo glouton : 58
+solution ameliore 2:58
+64_0.8
+algo couplage : 62
+algo glouton : 60
+solution ameliore 2:60
+65_0.2
+algo couplage : 62
+algo glouton : 50
+solution ameliore 2:48
+65_0.4
+algo couplage : 64
+algo glouton : 58
+solution ameliore 2:55
+65_0.6000000000000001
+algo couplage : 64
+algo glouton : 59
+solution ameliore 2:59
+65_0.8
+algo couplage : 64
+algo glouton : 61
+solution ameliore 2:60
+66_0.2
+algo couplage : 60
+algo glouton : 51
+solution ameliore 2:49
+66_0.4
+algo couplage : 66
+algo glouton : 58
+solution ameliore 2:56
+66_0.6000000000000001
+algo couplage : 64
+algo glouton : 60
+solution ameliore 2:59
+66_0.8
+algo couplage : 66
+algo glouton : 62
+solution ameliore 2:62
+67_0.2
+algo couplage : 62
+algo glouton : 53
+solution ameliore 2:50
+67_0.4
+algo couplage : 66
+algo glouton : 58
+solution ameliore 2:57
+67_0.6000000000000001
+algo couplage : 66
+algo glouton : 61
+solution ameliore 2:61
+67_0.8
+algo couplage : 66
+algo glouton : 62
+solution ameliore 2:62
+68_0.2
+algo couplage : 62
+algo glouton : 55
+solution ameliore 2:51
+68_0.4
+algo couplage : 66
+algo glouton : 62
+solution ameliore 2:58
+68_0.6000000000000001
+algo couplage : 68
+algo glouton : 62
+solution ameliore 2:61
+68_0.8
+algo couplage : 68
+algo glouton : 65
+solution ameliore 2:64
+69_0.2
+algo couplage : 66
+algo glouton : 54
+solution ameliore 2:52
+69_0.4
+algo couplage : 68
+algo glouton : 61
+solution ameliore 2:59
+69_0.6000000000000001
+algo couplage : 68
+algo glouton : 64
+solution ameliore 2:62
+69_0.8
+algo couplage : 68
+algo glouton : 66
+solution ameliore 2:64
+70_0.2
+algo couplage : 66
+algo glouton : 56
+solution ameliore 2:53
+70_0.4
+algo couplage : 68
+algo glouton : 61
+solution ameliore 2:59
+70_0.6000000000000001
+algo couplage : 70
+algo glouton : 64
+solution ameliore 2:63
+70_0.8
+algo couplage : 70
+algo glouton : 67
+solution ameliore 2:65
+71_0.2
+algo couplage : 68
+algo glouton : 56
+solution ameliore 2:54
+71_0.4
+algo couplage : 68
+algo glouton : 62
+solution ameliore 2:61
+71_0.6000000000000001
+algo couplage : 70
+algo glouton : 66
+solution ameliore 2:64
+71_0.8
+algo couplage : 70
+algo glouton : 67
+solution ameliore 2:66
+72_0.2
+algo couplage : 68
+algo glouton : 56
+solution ameliore 2:54
+72_0.4
+algo couplage : 72
+algo glouton : 64
+solution ameliore 2:62
+72_0.6000000000000001
+algo couplage : 70
+algo glouton : 66
+solution ameliore 2:65
+72_0.8
+algo couplage : 72
+algo glouton : 69
+solution ameliore 2:67
+73_0.2
+algo couplage : 68
+algo glouton : 59
+solution ameliore 2:56
+73_0.4
+algo couplage : 70
+algo glouton : 65
+solution ameliore 2:63
+73_0.6000000000000001
+algo couplage : 72
+algo glouton : 67
+solution ameliore 2:66
+73_0.8
+algo couplage : 72
+algo glouton : 69
+solution ameliore 2:68
+74_0.2
+algo couplage : 70
+algo glouton : 59
+solution ameliore 2:56
+74_0.4
+algo couplage : 72
+algo glouton : 64
+solution ameliore 2:63
+74_0.6000000000000001
+algo couplage : 74
+algo glouton : 68
+solution ameliore 2:67
+74_0.8
+algo couplage : 74
+algo glouton : 70
+solution ameliore 2:69
+75_0.2
+algo couplage : 72
+algo glouton : 61
+solution ameliore 2:57
+75_0.4
+algo couplage : 74
+algo glouton : 67
+solution ameliore 2:65
+75_0.6000000000000001
+algo couplage : 72
+algo glouton : 68
+solution ameliore 2:67
+75_0.8
+algo couplage : 74
+algo glouton : 70
+solution ameliore 2:70
+76_0.2
+algo couplage : 74
+algo glouton : 58
+solution ameliore 2:58
+76_0.4
+algo couplage : 74
+algo glouton : 67
+solution ameliore 2:66
+76_0.6000000000000001
+algo couplage : 76
+algo glouton : 71
+solution ameliore 2:68
+76_0.8
+algo couplage : 76
+algo glouton : 72
+solution ameliore 2:71
+77_0.2
+algo couplage : 74
+algo glouton : 62
+solution ameliore 2:61
+77_0.4
+algo couplage : 76
+algo glouton : 66
+solution ameliore 2:66
+77_0.6000000000000001
+algo couplage : 74
+algo glouton : 71
+solution ameliore 2:70
+77_0.8
+algo couplage : 76
+algo glouton : 73
+solution ameliore 2:72
+78_0.2
+algo couplage : 74
+algo glouton : 63
+solution ameliore 2:61
+78_0.4
+algo couplage : 76
+algo glouton : 70
+solution ameliore 2:68
+78_0.6000000000000001
+algo couplage : 78
+algo glouton : 72
+solution ameliore 2:71
+78_0.8
+algo couplage : 78
+algo glouton : 75
+solution ameliore 2:73
+79_0.2
+algo couplage : 74
+algo glouton : 63
+solution ameliore 2:60
+79_0.4
+algo couplage : 78
+algo glouton : 70
+solution ameliore 2:69
+79_0.6000000000000001
+algo couplage : 78
+algo glouton : 74
+solution ameliore 2:71
+79_0.8
+algo couplage : 78
+algo glouton : 75
+solution ameliore 2:74
+80_0.2
+algo couplage : 78
+algo glouton : 65
+solution ameliore 2:63
+80_0.4
+algo couplage : 80
+algo glouton : 72
+solution ameliore 2:70
+80_0.6000000000000001
+algo couplage : 78
+algo glouton : 74
+solution ameliore 2:73
+80_0.8
+algo couplage : 80
+algo glouton : 75
+solution ameliore 2:75
+81_0.2
+algo couplage : 78
+algo glouton : 67
+solution ameliore 2:64
+81_0.4
+algo couplage : 80
+algo glouton : 71
+solution ameliore 2:70
+81_0.6000000000000001
+algo couplage : 80
+algo glouton : 74
+solution ameliore 2:74
+81_0.8
+algo couplage : 80
+algo glouton : 77
+solution ameliore 2:76
+82_0.2
+algo couplage : 78
+algo glouton : 67
+solution ameliore 2:65
+82_0.4
+algo couplage : 80
+algo glouton : 73
+solution ameliore 2:71
+82_0.6000000000000001
+algo couplage : 80
+algo glouton : 76
+solution ameliore 2:75
+82_0.8
+algo couplage : 82
+algo glouton : 79
+solution ameliore 2:78
+83_0.2
+algo couplage : 78
+algo glouton : 67
+solution ameliore 2:65
+83_0.4
+algo couplage : 82
+algo glouton : 74
+solution ameliore 2:72
+83_0.6000000000000001
+algo couplage : 82
+algo glouton : 77
+solution ameliore 2:75
+83_0.8
+algo couplage : 82
+algo glouton : 79
+solution ameliore 2:78
+84_0.2
+algo couplage : 78
+algo glouton : 67
+solution ameliore 2:66
+84_0.4
+algo couplage : 82
+algo glouton : 74
+solution ameliore 2:73
+84_0.6000000000000001
+algo couplage : 84
+algo glouton : 77
+solution ameliore 2:77
+84_0.8
+algo couplage : 84
+algo glouton : 79
+solution ameliore 2:79
+85_0.2
+algo couplage : 82
+algo glouton : 69
+solution ameliore 2:66
+85_0.4
+algo couplage : 82
+algo glouton : 75
+solution ameliore 2:74
+85_0.6000000000000001
+algo couplage : 82
+algo glouton : 80
+solution ameliore 2:78
+85_0.8
+algo couplage : 84
+algo glouton : 80
+solution ameliore 2:80
+86_0.2
+algo couplage : 84
+algo glouton : 70
+solution ameliore 2:68
+86_0.4
+algo couplage : 82
+algo glouton : 77
+solution ameliore 2:75
+86_0.6000000000000001
+algo couplage : 84
+algo glouton : 79
+solution ameliore 2:79
+86_0.8
+algo couplage : 86
+algo glouton : 82
+solution ameliore 2:81
+87_0.2
+algo couplage : 84
+algo glouton : 72
+solution ameliore 2:69
+87_0.4
+algo couplage : 86
+algo glouton : 78
+solution ameliore 2:77
+87_0.6000000000000001
+algo couplage : 86
+algo glouton : 81
+solution ameliore 2:80
+87_0.8
+algo couplage : 86
+algo glouton : 83
+solution ameliore 2:82
+88_0.2
+algo couplage : 84
+algo glouton : 72
+solution ameliore 2:69
+88_0.4
+algo couplage : 88
+algo glouton : 78
+solution ameliore 2:77
+88_0.6000000000000001
+algo couplage : 88
+algo glouton : 82
+solution ameliore 2:81
+88_0.8
+algo couplage : 88
+algo glouton : 83
+solution ameliore 2:83
+89_0.2
+algo couplage : 84
+algo glouton : 74
+solution ameliore 2:71
+89_0.4
+algo couplage : 86
+algo glouton : 80
+solution ameliore 2:79
+89_0.6000000000000001
+algo couplage : 88
+algo glouton : 82
+solution ameliore 2:81
+89_0.8
+algo couplage : 88
+algo glouton : 85
+solution ameliore 2:84
+90_0.2
+algo couplage : 86
+algo glouton : 73
+solution ameliore 2:70
+90_0.4
+algo couplage : 88
+algo glouton : 82
+solution ameliore 2:80
+90_0.6000000000000001
+algo couplage : 88
+algo glouton : 84
+solution ameliore 2:83
+90_0.8
+algo couplage : 90
+algo glouton : 86
+solution ameliore 2:85
+91_0.2
+algo couplage : 84
+algo glouton : 73
+solution ameliore 2:70
+91_0.4
+algo couplage : 90
+algo glouton : 81
+solution ameliore 2:79
+91_0.6000000000000001
+algo couplage : 90
+algo glouton : 83
+solution ameliore 2:83
+91_0.8
+algo couplage : 90
+algo glouton : 87
+solution ameliore 2:86
+92_0.2
+algo couplage : 90
+algo glouton : 73
+solution ameliore 2:73
+92_0.4
+algo couplage : 90
+algo glouton : 83
+solution ameliore 2:80
+92_0.6000000000000001
+algo couplage : 90
+algo glouton : 87
+solution ameliore 2:85
+92_0.8
+algo couplage : 92
+algo glouton : 88
+solution ameliore 2:87
+93_0.2
+algo couplage : 90
+algo glouton : 78
+solution ameliore 2:74
+93_0.4
+algo couplage : 90
+algo glouton : 83
+solution ameliore 2:82
+93_0.6000000000000001
+algo couplage : 92
+algo glouton : 86
+solution ameliore 2:85
+93_0.8
+algo couplage : 92
+algo glouton : 89
+solution ameliore 2:88
+94_0.2
+algo couplage : 92
+algo glouton : 77
+solution ameliore 2:74
+94_0.4
+algo couplage : 92
+algo glouton : 85
+solution ameliore 2:83
+94_0.6000000000000001
+algo couplage : 94
+algo glouton : 88
+solution ameliore 2:87
+94_0.8
+algo couplage : 94
+algo glouton : 90
+solution ameliore 2:89
+95_0.2
+algo couplage : 90
+algo glouton : 79
+solution ameliore 2:76
+95_0.4
+algo couplage : 94
+algo glouton : 86
+solution ameliore 2:84
+95_0.6000000000000001
+algo couplage : 94
+algo glouton : 89
+solution ameliore 2:88
+95_0.8
+algo couplage : 94
+algo glouton : 91
+solution ameliore 2:90
+96_0.2
+algo couplage : 92
+algo glouton : 79
+solution ameliore 2:74
+96_0.4
+algo couplage : 96
+algo glouton : 85
+solution ameliore 2:84
+96_0.6000000000000001
+algo couplage : 96
+algo glouton : 90
+solution ameliore 2:88
+96_0.8
+algo couplage : 96
+algo glouton : 91
+solution ameliore 2:91
+97_0.2
+algo couplage : 92
+algo glouton : 82
+solution ameliore 2:77
+97_0.4
+algo couplage : 96
+algo glouton : 87
+solution ameliore 2:86
+97_0.6000000000000001
+algo couplage : 94
+algo glouton : 91
+solution ameliore 2:89
+97_0.8
+algo couplage : 96
+algo glouton : 93
+solution ameliore 2:92
+98_0.2
+algo couplage : 98
+algo glouton : 80
+solution ameliore 2:78
+98_0.4
+algo couplage : 98
+algo glouton : 87
+solution ameliore 2:86
+98_0.6000000000000001
+algo couplage : 98
+algo glouton : 91
+solution ameliore 2:91
+98_0.8
+algo couplage : 98
+algo glouton : 94
+solution ameliore 2:93
+99_0.2
+algo couplage : 94
+algo glouton : 81
+solution ameliore 2:80
+99_0.4
+algo couplage : 98
+algo glouton : 91
+solution ameliore 2:88
+99_0.6000000000000001
+algo couplage : 98
+algo glouton : 91
+solution ameliore 2:91
+99_0.8
+algo couplage : 98
+algo glouton : 95
+solution ameliore 2:94
+100_0.2
+algo couplage : 96
+algo glouton : 83
+solution ameliore 2:80
+100_0.4
+algo couplage : 98
+algo glouton : 91
+solution ameliore 2:89
+100_0.6000000000000001
+algo couplage : 98
+algo glouton : 94
+solution ameliore 2:93
+100_0.8
+algo couplage : 98
+algo glouton : 96
+solution ameliore 2:95

@@ -2,8 +2,6 @@
 
 ### Natacha RIVIERE ET Imane HADBI
 
-[Lien pour éditer ce markdown](https://hackmd.io/@e8Tyv4S8TlC0Zl1TAgWASg/SyrdJqFZT/edit)
-
 ## 2. Graphes
 
 La représentation du graphe choisie est basée sur un dictionnaire Python. Dans cette représentation :
@@ -59,7 +57,7 @@ Or la solution optimale est [B,D,F]
 Donc l'algorithme glouton n'est pas optimal. Le facteur d'approximation est $4\over3$. 
 Par conséquent, dans ce cas, l'algorithme n'est pas $7\over6$-approchée.
 
-### Question 2
+#### Question 2
 #### Comparaison ( Glouton VS Couplage ):
 
 ##### Temps de calcul :
@@ -94,7 +92,7 @@ L'algo parvient à fournir la solution optimale. Cela signifie qu'il est capable
 
 <center><img src="plots/branchementSimple.png" width="60%"></center>
 
-### 4.2 Ajout de bornes
+#### 4.2 Ajout de bornes
 #### Question 1
 Soit G un graphe, M un couplage, m le nombre d'arêtes de G de G et C une couverture de G. Alors :
 $\lvert C \rvert \geq \max(b_1,b_2,b_3)$
@@ -129,8 +127,8 @@ Donc si on a un couplage M, on aura toujours au moins $\lvert{M}\rvert$ sommets 
 ##### Montrons $b_3$ :
 considérons le cas où $|C| = n_0$ . 
 
-Dans ce cas, le graphe a n0 sommets en C. 
-Le nombre maximal d'arêtes qu'un graphe peut avoir avec n0 sommets est donné par le graphe complet, ce qui donne:
+Dans ce cas, le graphe a $n_0$ sommets en C. 
+Le nombre maximal d'arêtes qu'un graphe peut avoir avec $n_0$ sommets est donné par le graphe complet, ce qui donne:
 $\frac {n_0 (n_0 - 1)}{2}$ arêtes.
 
 En utilisant cette valeur dans la formule de b3, nous obtenons :
@@ -191,6 +189,12 @@ En revanche, pour p=0,2 la différence est notable. La version améliorée 2 est
 
 #### Question 4 :
 
-Les algorithmes de couplage et glouton présentent généralement des rapports d'approximation élevés, proches de 1. Même lorsque la taille de l'instance "n" varie, les rapports d'approximation restent globalement performants, avec de légères fluctuations. Les pires rapports d'approximation observés étaient toujours proches de 1, confirmant la fiabilité de ces algorithmes pour résoudre le problème.
+L'algorithme glouton présente un rapport d'approximation bien plus proche de 1 que l'algorithme de couplage pour toutes les instances étudiées. Ses solutions sont donc bien plus proches de la solution optimale que celles de l'algorithme de couplage. 
 
-![rapport aprox](plots/rapportAprox.png)
+De plus on constate que plus les instances grandissent, plus les solutions trouvées par couplage sont proches de la solution optimale, et des solutions de glouton.
+
+<center><img src="plots/rapports.png" width="60%"></center>
+
+Dans notre cas, les pires rapports d'approximation observés sont :
+- algorithme glouton : 1.25
+- algorithme de couplage : 2

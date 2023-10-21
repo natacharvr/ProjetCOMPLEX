@@ -491,27 +491,31 @@ def etudierSommetCouplageAmeliore2(graph, sommets, profondeur):
         return [len(sommets), sommets]
     
 
-f = open("benhmark/ComparaisonBranchementsAmeliorés08.txt", "w")
-for i in range(1, 200) :
+f = open("benhmark/ValeursApproximation7.txt", "w")
+for i in range(1, 101) :
     print(i)
-    # for p in np.arange(0.2, 0.8, 0.2) :
-    p = 0.8
-    f.write(str(i) + "_" + str(p) + "\n")
-    graph = createGraph(i, p)
+    for p in np.arange(0.2, 0.8, 0.2) :
+        f.write(str(i) + "_" + str(p) + "\n")
+        graph = createGraph(i, p)
 
-    start = time.time()
-    a = branchementCouplageAmeliore(graph)
-    end = time.time()
-    elapsed = end - start
-    f.write(f'Temps d\'execution algo ameliore : {elapsed:.5}s' + '\n')
+        # start = time.time()
+        # a = branchementCouplageAmeliore(graph)
+        # end = time.time()
+        # elapsed = end - start
+        # f.write(f'Temps d\'execution algo ameliore : {elapsed:.5}s' + '\n')
         # print("solution algo ameliore:", a[0])
 
-    start = time.time()
-    a = branchementCouplageAmeliore2(graph)
-    end = time.time()
-    elapsed = end - start
-    f.write(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s'+'\n')
-    # print("solution ameliore 2:", a[0])
+        # start = time.time()
+        coupl = algo_couplage(graph)
+        f.write("algo couplage : " + str(len(coupl[0])) + '\n')
+
+        glout = algo_glouton(graph)
+        f.write("algo glouton : "+ str (len(glout)) + '\n')
+        a = branchementCouplageAmeliore2(graph)
+        # end = time.time()
+        # elapsed = end - start
+        # f.write(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s'+'\n')
+        f.write("solution ameliore 2:"+ str(a[0]) + '\n')
 
         # start = time.time()
         # a = branchement(graph)
@@ -530,5 +534,5 @@ for i in range(1, 200) :
         # print("\n\n\n")
 
 #         UB = math.inf
-    UB_ameliore = math.inf
-    UB_ameliore2 = math.inf
+    # UB_ameliore = math.inf
+        UB_ameliore2 = math.inf
