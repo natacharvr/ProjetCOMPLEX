@@ -127,18 +127,20 @@ L'algorithme présente un temps d'exécution très faible, proche de zéro, pour
 ##### Efficacité : 
 L'algorithme est toujours capable de produire des solutions optimales, dans un temps d'exécution très court.
 
-![Branchement amelioré 1](plots/.png)
+![Branchement amelioré 1](plots/algo_ameliore1_tempsExec.png)
 
 #### Branchement amélioré 2: 
 ( choisir le branchement de maniere à ce que le sommet soit de degre maximum )
 
 ##### Temps d'exécution : 
-L'algorithme "Amélioré 1" et l'algorithme "Amélioré 2" affichent des temps d'exécution similaires, la plupart du temps proches de zéro. Cependant, "Amélioré 2" est légèrement plus rapide dans certains cas.
+Les algorithmes "Amélioré 1" et "Amélioré 2" montrent des temps d'exécution extrêmement courts, presque nuls, dans la plupart des cas. Cependant, il est important de noter que "Amélioré 2" se distingue de manière significative par sa rapidité, surpassant généralement "Amélioré 1".
+
+![Branchement amelioré1](plots/algo_ameliore2_tempsExec.png)
 
 ##### Efficacité : 
 En ce qui concerne la qualité des solutions, les deux donnent des résultats similaires.
 
-![Branchement amelioré 2](plots/.png)
+![Branchement amelioré1 VS 2](plots/efficacite_algo1_vs_algo2.png)
 
 #### Question 4 :
 
