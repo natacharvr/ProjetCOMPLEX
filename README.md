@@ -127,7 +127,24 @@ $b_2$ est valide car par définition, un couplage est un ensemble d'arêtes d'ay
 Donc si on a un couplage M, on aura toujours au moins $\lvert{M}\rvert$ sommets dans une couverture.
 
 ##### Montrons $b_3$ :
-TODO
+considérons le cas où $|C| = n_0$ . 
+
+Dans ce cas, le graphe a n0 sommets en C. 
+Le nombre maximal d'arêtes qu'un graphe peut avoir avec n0 sommets est donné par le graphe complet, ce qui donne:
+$\frac {n_0 (n_0 - 1)}{2}$ arêtes.
+
+En utilisant cette valeur dans la formule de b3, nous obtenons :
+
+$b_3 =\frac{2n_0 - 1 - \sqrt{(2n_0 - 1)^2 - 8(n_0(n_0 - 1))/2}}{2}$
+
+$b_3 = \frac{2n_0 - 1 - \sqrt{4n_0^2 - 4n_0 + 1 - 4n_0(n_0 - 1)}}{2}$
+
+$b_3 = \frac{2n_0 - 1 - \sqrt{1}}{2}$
+
+$b_3 = n_0 - 1$
+
+$|C| = n_0 > b_3$
+
 
 #### Question 2 :
 En ajoutant le calcul d'une borne inférieure et d'une borne supérieure en chaque noeud, on réduit énormément le nombre de calculs à faire car au lieu de calculer toutes les possibilités, on n'explore que les noeuds qui sont intéressants. 
