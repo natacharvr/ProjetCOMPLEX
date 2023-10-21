@@ -147,21 +147,31 @@ L'algorithme présente un temps d'exécution très faible, proche de zéro, pour
 
 ##### Efficacité : 
 L'algorithme est toujours capable de produire des solutions optimales, dans un temps d'exécution très court.
+En revanche, on constate que pour des valeurs de p très petites, l'algorithme prend beaucoup plus de temps que pour des p plus grands. Cela peut être contre-intuitif car le graphe obtenu est plus petit. 
+
+Ceci s'explique car l'amélioration est de prendre tous les voisins du sommet sélectionné plutôt que seulement un sommet. Dans les graphes moins denses, les ensembles de voisins sont très réduits et nous ne réduisons donc pas très vite le nombre de sommets à étudier.
 
 ![Branchement amelioré 1](plots/algo_ameliore1_tempsExec.png)
+
+La courbe suivante présente les temps de calcul de cet algorithme en fonction de la taille de l'instance pour p=0.8.
+
+On constate que la courbe produite a un profil exponentiel, ce qui confirme que cet algorithme n'est toujours pas polynomial, ce qui correspond bien au fait que le problème est NP-difficile.
+![Branchement amelioré 1](plots/branchAmeliore1.png)
+
 
 #### Branchement amélioré 2: 
 ( choisir le branchement de maniere à ce que le sommet soit de degre maximum )
 
 ##### Temps d'exécution : 
-Les algorithmes "Amélioré 1" et "Amélioré 2" montrent des temps d'exécution extrêmement courts, presque nuls, dans la plupart des cas. Cependant, il est important de noter que "Amélioré 2" se distingue de manière significative par sa rapidité, surpassant généralement "Amélioré 1".
-
+L'algorithme amélioré 2 présente un profil général très similaire à l'amélioration 1. On a toujours un temps de calcul plus élevé pour les petites valeurs de p. Il est donc intéressant de comparer les temps d'exécution des deux algorithmes pour plusieurs valeurs de p.
 ![Branchement amelioré1](plots/algo_ameliore2_tempsExec.png)
 
-##### Efficacité : 
-En ce qui concerne la qualité des solutions, les deux donnent des résultats similaires.
+Pour p=0,8 il n'y a presque aucune différence entre les deux algorithmes. La version améliorée 2 est légèrement plus rapide que la première sur des plus grandes instances.
+![Comparaison améliorés p=0.8](plots/compareAmeliorés08.png)
 
-![Branchement amelioré1 VS 2](plots/efficacite_algo1_vs_algo2.png)
+En revanche, pour p=0,2 la différence est notable. La version améliorée 2 est nettement plus rapide. Comme elle sélectionne le sommet de degré maximal, elle permet d'éliminer le plus de sommets possible en peu d'itération, même si le graphe est peu dense.
+![Comparaison améliorés p=0.2](plots/compareAmeliorés.png)
+
 
 #### Question 4 :
 

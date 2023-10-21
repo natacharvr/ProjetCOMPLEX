@@ -448,7 +448,7 @@ def branchementCouplageAmeliore2(graph):
         #Il y a des arêtes, on crée un noeud avec le sommet gauche en moins et un autre avec le sommet droit en moins
         g = etudierSommetCouplageAmeliore2(graph, [u], 1) 
 
-        d = etudierSommetCouplageAmeliore2(graph, list(graph[u]), len(graph[u])) #on passe une liste de toujs les sommets reliés à u
+        d = etudierSommetCouplageAmeliore2(graph, list(graph[u]), len(graph[u])) #on passe une liste de tous les sommets reliés à u
         # print("g: ", g, "d: ", d)
         #Si la solution de gauche est la meilleure, on la renvoie, l'autre sinon
         if min(g[0], d[0]) == g[0] :
@@ -491,32 +491,33 @@ def etudierSommetCouplageAmeliore2(graph, sommets, profondeur):
         return [len(sommets), sommets]
     
 
-f = open("benhmark/valeursBranchementsimple.txt", "w")
-for i in range(1, 26) :
+f = open("benhmark/ComparaisonBranchementsAmeliorés.txt", "w")
+for i in range(1, 100) :
     print(i)
-    for p in np.arange(0.2, 0.8, 0.2) :
-        f.write(str(i) + "_" + str(p) + "\n")
-        graph = createGraph(i, p)
+    # for p in np.arange(0.2, 0.8, 0.2) :
+    p = 0.2
+    f.write(str(i) + "_" + str(p) + "\n")
+    graph = createGraph(i, p)
 
-        # start = time.time()
-        # a = branchementCouplageAmeliore(graph)
-        # end = time.time()
-        # elapsed = end - start
-        # print(f'Temps d\'execution algo ameliore : {elapsed:.5}s')
+    start = time.time()
+    a = branchementCouplageAmeliore(graph)
+    end = time.time()
+    elapsed = end - start
+    f.write(f'Temps d\'execution algo ameliore : {elapsed:.5}s' + '\n')
         # print("solution algo ameliore:", a[0])
 
+    start = time.time()
+    a = branchementCouplageAmeliore2(graph)
+    end = time.time()
+    elapsed = end - start
+    f.write(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s'+'\n')
+    # print("solution ameliore 2:", a[0])
+
         # start = time.time()
-        # a = branchementCouplageAmeliore2(graph)
+        # a = branchement(graph)
         # end = time.time()
         # elapsed = end - start
-        # print(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s')
-        # print("solution ameliore 2:", a[0])
-
-        start = time.time()
-        a = branchement(graph)
-        end = time.time()
-        elapsed = end - start
-        f.write(f'Temps d\'execution algo naif : {elapsed:.5}s' + '\n')
+        # f.write(f'Temps d\'execution algo naif : {elapsed:.5}s' + '\n')
         # f.write("solution naive :" + str(a[0]) + '\n')
 
         # start = time.time()
@@ -528,6 +529,6 @@ for i in range(1, 26) :
 
         # print("\n\n\n")
 
-    UB = math.inf
-#         UB_ameliore = math.inf
-#         UB_ameliore2 = math.inf
+#         UB = math.inf
+    UB_ameliore = math.inf
+    UB_ameliore2 = math.inf
