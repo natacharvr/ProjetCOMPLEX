@@ -1,0 +1,597 @@
+1_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+2_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+3_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+4_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+5_0.8
+Temps d'execution algo ameliore : 0.0010006s
+Temps d'execution algo ameliore 2 : 0.0s
+6_0.8
+Temps d'execution algo ameliore : 0.00099421s
+Temps d'execution algo ameliore 2 : 0.0s
+7_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+8_0.8
+Temps d'execution algo ameliore : 0.00099659s
+Temps d'execution algo ameliore 2 : 0.0s
+9_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+10_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0009973s
+11_0.8
+Temps d'execution algo ameliore : 0.00099397s
+Temps d'execution algo ameliore 2 : 0.0s
+12_0.8
+Temps d'execution algo ameliore : 0.0019965s
+Temps d'execution algo ameliore 2 : 0.0009954s
+13_0.8
+Temps d'execution algo ameliore : 0.0018735s
+Temps d'execution algo ameliore 2 : 0.0s
+14_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+15_0.8
+Temps d'execution algo ameliore : 0.00583s
+Temps d'execution algo ameliore 2 : 0.0010066s
+16_0.8
+Temps d'execution algo ameliore : 0.002229s
+Temps d'execution algo ameliore 2 : 0.0s
+17_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+18_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+19_0.8
+Temps d'execution algo ameliore : 0.01415s
+Temps d'execution algo ameliore 2 : 0.00076532s
+20_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+21_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.018537s
+22_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.0s
+23_0.8
+Temps d'execution algo ameliore : 0.014614s
+Temps d'execution algo ameliore 2 : 0.0s
+24_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.016762s
+25_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.017038s
+26_0.8
+Temps d'execution algo ameliore : 0.0033705s
+Temps d'execution algo ameliore 2 : 0.010622s
+27_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.015778s
+28_0.8
+Temps d'execution algo ameliore : 0.0s
+Temps d'execution algo ameliore 2 : 0.017585s
+29_0.8
+Temps d'execution algo ameliore : 0.0138s
+Temps d'execution algo ameliore 2 : 0.0026455s
+30_0.8
+Temps d'execution algo ameliore : 0.016292s
+Temps d'execution algo ameliore 2 : 0.0s
+31_0.8
+Temps d'execution algo ameliore : 0.0028617s
+Temps d'execution algo ameliore 2 : 0.019845s
+32_0.8
+Temps d'execution algo ameliore : 0.013077s
+Temps d'execution algo ameliore 2 : 0.016211s
+33_0.8
+Temps d'execution algo ameliore : 0.012746s
+Temps d'execution algo ameliore 2 : 0.0048337s
+34_0.8
+Temps d'execution algo ameliore : 0.016517s
+Temps d'execution algo ameliore 2 : 0.016021s
+35_0.8
+Temps d'execution algo ameliore : 0.032209s
+Temps d'execution algo ameliore 2 : 0.017602s
+36_0.8
+Temps d'execution algo ameliore : 0.017172s
+Temps d'execution algo ameliore 2 : 0.015979s
+37_0.8
+Temps d'execution algo ameliore : 0.033602s
+Temps d'execution algo ameliore 2 : 0.016481s
+38_0.8
+Temps d'execution algo ameliore : 0.037162s
+Temps d'execution algo ameliore 2 : 0.030031s
+39_0.8
+Temps d'execution algo ameliore : 0.015856s
+Temps d'execution algo ameliore 2 : 0.033409s
+40_0.8
+Temps d'execution algo ameliore : 0.030796s
+Temps d'execution algo ameliore 2 : 0.019515s
+41_0.8
+Temps d'execution algo ameliore : 0.032909s
+Temps d'execution algo ameliore 2 : 0.033235s
+42_0.8
+Temps d'execution algo ameliore : 0.032284s
+Temps d'execution algo ameliore 2 : 0.033981s
+43_0.8
+Temps d'execution algo ameliore : 0.032701s
+Temps d'execution algo ameliore 2 : 0.033938s
+44_0.8
+Temps d'execution algo ameliore : 0.033773s
+Temps d'execution algo ameliore 2 : 0.033223s
+45_0.8
+Temps d'execution algo ameliore : 0.050092s
+Temps d'execution algo ameliore 2 : 0.038502s
+46_0.8
+Temps d'execution algo ameliore : 0.042941s
+Temps d'execution algo ameliore 2 : 0.041394s
+47_0.8
+Temps d'execution algo ameliore : 0.04265s
+Temps d'execution algo ameliore 2 : 0.048328s
+48_0.8
+Temps d'execution algo ameliore : 0.050908s
+Temps d'execution algo ameliore 2 : 0.11146s
+49_0.8
+Temps d'execution algo ameliore : 0.071342s
+Temps d'execution algo ameliore 2 : 0.046568s
+50_0.8
+Temps d'execution algo ameliore : 0.055394s
+Temps d'execution algo ameliore 2 : 0.052161s
+51_0.8
+Temps d'execution algo ameliore : 0.061631s
+Temps d'execution algo ameliore 2 : 0.064232s
+52_0.8
+Temps d'execution algo ameliore : 0.068239s
+Temps d'execution algo ameliore 2 : 0.049507s
+53_0.8
+Temps d'execution algo ameliore : 0.068319s
+Temps d'execution algo ameliore 2 : 0.063828s
+54_0.8
+Temps d'execution algo ameliore : 0.086459s
+Temps d'execution algo ameliore 2 : 0.063602s
+55_0.8
+Temps d'execution algo ameliore : 0.068303s
+Temps d'execution algo ameliore 2 : 0.082727s
+56_0.8
+Temps d'execution algo ameliore : 0.067921s
+Temps d'execution algo ameliore 2 : 0.080019s
+57_0.8
+Temps d'execution algo ameliore : 0.094707s
+Temps d'execution algo ameliore 2 : 0.074688s
+58_0.8
+Temps d'execution algo ameliore : 0.098836s
+Temps d'execution algo ameliore 2 : 0.079578s
+59_0.8
+Temps d'execution algo ameliore : 0.095173s
+Temps d'execution algo ameliore 2 : 0.072866s
+60_0.8
+Temps d'execution algo ameliore : 0.092497s
+Temps d'execution algo ameliore 2 : 0.091484s
+61_0.8
+Temps d'execution algo ameliore : 0.11656s
+Temps d'execution algo ameliore 2 : 0.082204s
+62_0.8
+Temps d'execution algo ameliore : 0.10624s
+Temps d'execution algo ameliore 2 : 0.12229s
+63_0.8
+Temps d'execution algo ameliore : 0.10925s
+Temps d'execution algo ameliore 2 : 0.11559s
+64_0.8
+Temps d'execution algo ameliore : 0.11772s
+Temps d'execution algo ameliore 2 : 0.1297s
+65_0.8
+Temps d'execution algo ameliore : 0.13393s
+Temps d'execution algo ameliore 2 : 0.11744s
+66_0.8
+Temps d'execution algo ameliore : 0.14811s
+Temps d'execution algo ameliore 2 : 0.13438s
+67_0.8
+Temps d'execution algo ameliore : 0.14787s
+Temps d'execution algo ameliore 2 : 0.1946s
+68_0.8
+Temps d'execution algo ameliore : 0.17189s
+Temps d'execution algo ameliore 2 : 0.14779s
+69_0.8
+Temps d'execution algo ameliore : 0.15418s
+Temps d'execution algo ameliore 2 : 0.17694s
+70_0.8
+Temps d'execution algo ameliore : 0.15175s
+Temps d'execution algo ameliore 2 : 0.16935s
+71_0.8
+Temps d'execution algo ameliore : 0.21513s
+Temps d'execution algo ameliore 2 : 0.20367s
+72_0.8
+Temps d'execution algo ameliore : 0.18166s
+Temps d'execution algo ameliore 2 : 0.23577s
+73_0.8
+Temps d'execution algo ameliore : 0.2169s
+Temps d'execution algo ameliore 2 : 0.19176s
+74_0.8
+Temps d'execution algo ameliore : 0.23679s
+Temps d'execution algo ameliore 2 : 0.2007s
+75_0.8
+Temps d'execution algo ameliore : 0.21936s
+Temps d'execution algo ameliore 2 : 0.26455s
+76_0.8
+Temps d'execution algo ameliore : 0.21726s
+Temps d'execution algo ameliore 2 : 0.25198s
+77_0.8
+Temps d'execution algo ameliore : 0.22273s
+Temps d'execution algo ameliore 2 : 0.23252s
+78_0.8
+Temps d'execution algo ameliore : 0.29548s
+Temps d'execution algo ameliore 2 : 0.26712s
+79_0.8
+Temps d'execution algo ameliore : 0.28056s
+Temps d'execution algo ameliore 2 : 0.30729s
+80_0.8
+Temps d'execution algo ameliore : 0.39279s
+Temps d'execution algo ameliore 2 : 0.34939s
+81_0.8
+Temps d'execution algo ameliore : 0.29424s
+Temps d'execution algo ameliore 2 : 0.31243s
+82_0.8
+Temps d'execution algo ameliore : 0.42349s
+Temps d'execution algo ameliore 2 : 0.32926s
+83_0.8
+Temps d'execution algo ameliore : 0.3065s
+Temps d'execution algo ameliore 2 : 0.39837s
+84_0.8
+Temps d'execution algo ameliore : 0.32262s
+Temps d'execution algo ameliore 2 : 0.30858s
+85_0.8
+Temps d'execution algo ameliore : 0.46248s
+Temps d'execution algo ameliore 2 : 0.34666s
+86_0.8
+Temps d'execution algo ameliore : 0.37245s
+Temps d'execution algo ameliore 2 : 0.36169s
+87_0.8
+Temps d'execution algo ameliore : 0.36358s
+Temps d'execution algo ameliore 2 : 0.338s
+88_0.8
+Temps d'execution algo ameliore : 0.4339s
+Temps d'execution algo ameliore 2 : 0.38865s
+89_0.8
+Temps d'execution algo ameliore : 0.38747s
+Temps d'execution algo ameliore 2 : 0.41357s
+90_0.8
+Temps d'execution algo ameliore : 0.42076s
+Temps d'execution algo ameliore 2 : 0.48433s
+91_0.8
+Temps d'execution algo ameliore : 0.54011s
+Temps d'execution algo ameliore 2 : 0.4636s
+92_0.8
+Temps d'execution algo ameliore : 0.53209s
+Temps d'execution algo ameliore 2 : 0.56307s
+93_0.8
+Temps d'execution algo ameliore : 0.62508s
+Temps d'execution algo ameliore 2 : 0.58891s
+94_0.8
+Temps d'execution algo ameliore : 0.6052s
+Temps d'execution algo ameliore 2 : 0.58855s
+95_0.8
+Temps d'execution algo ameliore : 0.53238s
+Temps d'execution algo ameliore 2 : 0.5495s
+96_0.8
+Temps d'execution algo ameliore : 0.54468s
+Temps d'execution algo ameliore 2 : 0.56225s
+97_0.8
+Temps d'execution algo ameliore : 0.5387s
+Temps d'execution algo ameliore 2 : 0.57122s
+98_0.8
+Temps d'execution algo ameliore : 0.57577s
+Temps d'execution algo ameliore 2 : 0.77565s
+99_0.8
+Temps d'execution algo ameliore : 0.78431s
+Temps d'execution algo ameliore 2 : 0.5807s
+100_0.8
+Temps d'execution algo ameliore : 0.59794s
+Temps d'execution algo ameliore 2 : 0.57979s
+101_0.8
+Temps d'execution algo ameliore : 0.57631s
+Temps d'execution algo ameliore 2 : 0.65897s
+102_0.8
+Temps d'execution algo ameliore : 0.57785s
+Temps d'execution algo ameliore 2 : 0.60928s
+103_0.8
+Temps d'execution algo ameliore : 0.62488s
+Temps d'execution algo ameliore 2 : 0.62399s
+104_0.8
+Temps d'execution algo ameliore : 0.70113s
+Temps d'execution algo ameliore 2 : 0.65918s
+105_0.8
+Temps d'execution algo ameliore : 0.67305s
+Temps d'execution algo ameliore 2 : 0.6933s
+106_0.8
+Temps d'execution algo ameliore : 0.66468s
+Temps d'execution algo ameliore 2 : 0.67378s
+107_0.8
+Temps d'execution algo ameliore : 0.68178s
+Temps d'execution algo ameliore 2 : 0.72958s
+108_0.8
+Temps d'execution algo ameliore : 0.73844s
+Temps d'execution algo ameliore 2 : 0.75559s
+109_0.8
+Temps d'execution algo ameliore : 0.74229s
+Temps d'execution algo ameliore 2 : 0.841s
+110_0.8
+Temps d'execution algo ameliore : 0.75078s
+Temps d'execution algo ameliore 2 : 0.81159s
+111_0.8
+Temps d'execution algo ameliore : 0.80715s
+Temps d'execution algo ameliore 2 : 0.88018s
+112_0.8
+Temps d'execution algo ameliore : 0.86462s
+Temps d'execution algo ameliore 2 : 1.0311s
+113_0.8
+Temps d'execution algo ameliore : 0.99076s
+Temps d'execution algo ameliore 2 : 1.2323s
+114_0.8
+Temps d'execution algo ameliore : 0.96009s
+Temps d'execution algo ameliore 2 : 0.95086s
+115_0.8
+Temps d'execution algo ameliore : 0.9247s
+Temps d'execution algo ameliore 2 : 0.95937s
+116_0.8
+Temps d'execution algo ameliore : 0.93745s
+Temps d'execution algo ameliore 2 : 1.0386s
+117_0.8
+Temps d'execution algo ameliore : 1.1544s
+Temps d'execution algo ameliore 2 : 1.1418s
+118_0.8
+Temps d'execution algo ameliore : 1.0794s
+Temps d'execution algo ameliore 2 : 1.4966s
+119_0.8
+Temps d'execution algo ameliore : 1.1198s
+Temps d'execution algo ameliore 2 : 1.2018s
+120_0.8
+Temps d'execution algo ameliore : 1.1708s
+Temps d'execution algo ameliore 2 : 1.6328s
+121_0.8
+Temps d'execution algo ameliore : 1.1714s
+Temps d'execution algo ameliore 2 : 1.4784s
+122_0.8
+Temps d'execution algo ameliore : 1.24s
+Temps d'execution algo ameliore 2 : 1.3271s
+123_0.8
+Temps d'execution algo ameliore : 1.2771s
+Temps d'execution algo ameliore 2 : 1.3293s
+124_0.8
+Temps d'execution algo ameliore : 1.3217s
+Temps d'execution algo ameliore 2 : 1.3237s
+125_0.8
+Temps d'execution algo ameliore : 1.3388s
+Temps d'execution algo ameliore 2 : 1.4278s
+126_0.8
+Temps d'execution algo ameliore : 1.4465s
+Temps d'execution algo ameliore 2 : 1.5315s
+127_0.8
+Temps d'execution algo ameliore : 1.6106s
+Temps d'execution algo ameliore 2 : 1.7008s
+128_0.8
+Temps d'execution algo ameliore : 1.5644s
+Temps d'execution algo ameliore 2 : 1.6411s
+129_0.8
+Temps d'execution algo ameliore : 1.542s
+Temps d'execution algo ameliore 2 : 1.749s
+130_0.8
+Temps d'execution algo ameliore : 1.4926s
+Temps d'execution algo ameliore 2 : 1.537s
+131_0.8
+Temps d'execution algo ameliore : 1.4468s
+Temps d'execution algo ameliore 2 : 1.5545s
+132_0.8
+Temps d'execution algo ameliore : 1.5081s
+Temps d'execution algo ameliore 2 : 1.587s
+133_0.8
+Temps d'execution algo ameliore : 1.545s
+Temps d'execution algo ameliore 2 : 1.6318s
+134_0.8
+Temps d'execution algo ameliore : 1.7237s
+Temps d'execution algo ameliore 2 : 1.7423s
+135_0.8
+Temps d'execution algo ameliore : 1.7566s
+Temps d'execution algo ameliore 2 : 1.7401s
+136_0.8
+Temps d'execution algo ameliore : 1.695s
+Temps d'execution algo ameliore 2 : 1.9843s
+137_0.8
+Temps d'execution algo ameliore : 1.8838s
+Temps d'execution algo ameliore 2 : 2.0163s
+138_0.8
+Temps d'execution algo ameliore : 1.8648s
+Temps d'execution algo ameliore 2 : 2.0925s
+139_0.8
+Temps d'execution algo ameliore : 2.0542s
+Temps d'execution algo ameliore 2 : 2.0782s
+140_0.8
+Temps d'execution algo ameliore : 2.1683s
+Temps d'execution algo ameliore 2 : 2.4378s
+141_0.8
+Temps d'execution algo ameliore : 2.029s
+Temps d'execution algo ameliore 2 : 2.14s
+142_0.8
+Temps d'execution algo ameliore : 2.1537s
+Temps d'execution algo ameliore 2 : 2.9191s
+143_0.8
+Temps d'execution algo ameliore : 2.4855s
+Temps d'execution algo ameliore 2 : 2.4693s
+144_0.8
+Temps d'execution algo ameliore : 2.156s
+Temps d'execution algo ameliore 2 : 3.3858s
+145_0.8
+Temps d'execution algo ameliore : 2.3776s
+Temps d'execution algo ameliore 2 : 2.4259s
+146_0.8
+Temps d'execution algo ameliore : 2.2342s
+Temps d'execution algo ameliore 2 : 2.654s
+147_0.8
+Temps d'execution algo ameliore : 2.3624s
+Temps d'execution algo ameliore 2 : 2.575s
+148_0.8
+Temps d'execution algo ameliore : 2.4721s
+Temps d'execution algo ameliore 2 : 2.5972s
+149_0.8
+Temps d'execution algo ameliore : 3.0471s
+Temps d'execution algo ameliore 2 : 2.6577s
+150_0.8
+Temps d'execution algo ameliore : 2.6271s
+Temps d'execution algo ameliore 2 : 2.7707s
+151_0.8
+Temps d'execution algo ameliore : 2.6408s
+Temps d'execution algo ameliore 2 : 2.8178s
+152_0.8
+Temps d'execution algo ameliore : 3.111s
+Temps d'execution algo ameliore 2 : 3.0882s
+153_0.8
+Temps d'execution algo ameliore : 2.5367s
+Temps d'execution algo ameliore 2 : 2.7124s
+154_0.8
+Temps d'execution algo ameliore : 2.5556s
+Temps d'execution algo ameliore 2 : 2.728s
+155_0.8
+Temps d'execution algo ameliore : 2.8999s
+Temps d'execution algo ameliore 2 : 3.003s
+156_0.8
+Temps d'execution algo ameliore : 3.3859s
+Temps d'execution algo ameliore 2 : 5.1266s
+157_0.8
+Temps d'execution algo ameliore : 4.2829s
+Temps d'execution algo ameliore 2 : 3.686s
+158_0.8
+Temps d'execution algo ameliore : 4.386s
+Temps d'execution algo ameliore 2 : 4.4388s
+159_0.8
+Temps d'execution algo ameliore : 4.7302s
+Temps d'execution algo ameliore 2 : 6.4973s
+160_0.8
+Temps d'execution algo ameliore : 7.0331s
+Temps d'execution algo ameliore 2 : 5.3207s
+161_0.8
+Temps d'execution algo ameliore : 4.6533s
+Temps d'execution algo ameliore 2 : 4.9675s
+162_0.8
+Temps d'execution algo ameliore : 4.8241s
+Temps d'execution algo ameliore 2 : 4.4512s
+163_0.8
+Temps d'execution algo ameliore : 4.318s
+Temps d'execution algo ameliore 2 : 4.9141s
+164_0.8
+Temps d'execution algo ameliore : 3.5003s
+Temps d'execution algo ameliore 2 : 3.9756s
+165_0.8
+Temps d'execution algo ameliore : 3.7264s
+Temps d'execution algo ameliore 2 : 4.1207s
+166_0.8
+Temps d'execution algo ameliore : 4.059s
+Temps d'execution algo ameliore 2 : 4.1483s
+167_0.8
+Temps d'execution algo ameliore : 3.555s
+Temps d'execution algo ameliore 2 : 4.1909s
+168_0.8
+Temps d'execution algo ameliore : 3.9729s
+Temps d'execution algo ameliore 2 : 4.288s
+169_0.8
+Temps d'execution algo ameliore : 3.8102s
+Temps d'execution algo ameliore 2 : 4.1921s
+170_0.8
+Temps d'execution algo ameliore : 4.2284s
+Temps d'execution algo ameliore 2 : 4.6618s
+171_0.8
+Temps d'execution algo ameliore : 4.3349s
+Temps d'execution algo ameliore 2 : 4.6395s
+172_0.8
+Temps d'execution algo ameliore : 4.5113s
+Temps d'execution algo ameliore 2 : 4.5363s
+173_0.8
+Temps d'execution algo ameliore : 4.6823s
+Temps d'execution algo ameliore 2 : 4.4598s
+174_0.8
+Temps d'execution algo ameliore : 4.3368s
+Temps d'execution algo ameliore 2 : 4.5368s
+175_0.8
+Temps d'execution algo ameliore : 4.1861s
+Temps d'execution algo ameliore 2 : 4.5658s
+176_0.8
+Temps d'execution algo ameliore : 4.8664s
+Temps d'execution algo ameliore 2 : 5.5855s
+177_0.8
+Temps d'execution algo ameliore : 4.6098s
+Temps d'execution algo ameliore 2 : 5.3924s
+178_0.8
+Temps d'execution algo ameliore : 5.1062s
+Temps d'execution algo ameliore 2 : 6.9641s
+179_0.8
+Temps d'execution algo ameliore : 6.389s
+Temps d'execution algo ameliore 2 : 5.9466s
+180_0.8
+Temps d'execution algo ameliore : 5.1771s
+Temps d'execution algo ameliore 2 : 5.6687s
+181_0.8
+Temps d'execution algo ameliore : 5.8424s
+Temps d'execution algo ameliore 2 : 5.8217s
+182_0.8
+Temps d'execution algo ameliore : 5.79s
+Temps d'execution algo ameliore 2 : 6.0267s
+183_0.8
+Temps d'execution algo ameliore : 6.2101s
+Temps d'execution algo ameliore 2 : 6.5957s
+184_0.8
+Temps d'execution algo ameliore : 5.7717s
+Temps d'execution algo ameliore 2 : 6.2621s
+185_0.8
+Temps d'execution algo ameliore : 5.6186s
+Temps d'execution algo ameliore 2 : 6.1849s
+186_0.8
+Temps d'execution algo ameliore : 5.9862s
+Temps d'execution algo ameliore 2 : 6.1765s
+187_0.8
+Temps d'execution algo ameliore : 5.8605s
+Temps d'execution algo ameliore 2 : 7.1557s
+188_0.8
+Temps d'execution algo ameliore : 6.6182s
+Temps d'execution algo ameliore 2 : 6.6041s
+189_0.8
+Temps d'execution algo ameliore : 6.1768s
+Temps d'execution algo ameliore 2 : 6.3105s
+190_0.8
+Temps d'execution algo ameliore : 5.9641s
+Temps d'execution algo ameliore 2 : 7.0497s
+191_0.8
+Temps d'execution algo ameliore : 7.0343s
+Temps d'execution algo ameliore 2 : 7.6481s
+192_0.8
+Temps d'execution algo ameliore : 7.3254s
+Temps d'execution algo ameliore 2 : 6.6595s
+193_0.8
+Temps d'execution algo ameliore : 7.3482s
+Temps d'execution algo ameliore 2 : 8.2797s
+194_0.8
+Temps d'execution algo ameliore : 7.173s
+Temps d'execution algo ameliore 2 : 8.7502s
+195_0.8
+Temps d'execution algo ameliore : 8.0173s
+Temps d'execution algo ameliore 2 : 11.067s
+196_0.8
+Temps d'execution algo ameliore : 8.1532s
+Temps d'execution algo ameliore 2 : 7.9356s
+197_0.8
+Temps d'execution algo ameliore : 7.8148s
+Temps d'execution algo ameliore 2 : 8.2592s
+198_0.8
+Temps d'execution algo ameliore : 7.6844s
+Temps d'execution algo ameliore 2 : 8.5629s
+199_0.8
+Temps d'execution algo ameliore : 8.1764s
+Temps d'execution algo ameliore 2 : 9.222s

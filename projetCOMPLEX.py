@@ -491,11 +491,11 @@ def etudierSommetCouplageAmeliore2(graph, sommets, profondeur):
         return [len(sommets), sommets]
     
 
-f = open("benhmark/ComparaisonBranchementsAmeliorés.txt", "w")
-for i in range(1, 100) :
+f = open("benhmark/ComparaisonBranchementsAmeliorés08.txt", "w")
+for i in range(1, 200) :
     print(i)
     # for p in np.arange(0.2, 0.8, 0.2) :
-    p = 0.2
+    p = 0.8
     f.write(str(i) + "_" + str(p) + "\n")
     graph = createGraph(i, p)
 

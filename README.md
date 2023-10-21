@@ -69,9 +69,9 @@ En revanche, l'algorithme couplage est beaucoup plus rapide que l'algorithme glo
 
 On observe qu'en faisant varier p, le temps d'éxécution varie également. Plus p est grand, plus de temps de calcul est élevé, ce qui est cohérent car plus p est grand, plus l'algorithme doit traiter d'arêtes. En revanche, le profil des courbes reste exponentiel même avec p très petit.
 
-![Couplage](plots/couplage_time.png)
+<center><img src="plots/couplage_time.png" width="60%"></center>
 
-![Glouton](plots/glouton_time.png)
+<center><img src="plots/glouton_time.png" width="60%"></center>
 
 ##### Efficacité:
 Les courbes suivantes ont pour objectif de déterminer quel algorithme est le plus efficace pour trouver une solution proche de l'optimal. On cherche à trouver une solution de taille minimale. On constate alors que l'algorithme glouton trouve toujours des meilleures solutions que l'algorithme de couplage. Cette différence est plus marquée sur des p plus petits. 
@@ -92,7 +92,7 @@ Comme l'algorithme de couplage, qui est effectué pour chaque possibilité, est 
 ##### Efficacité :
 L'algo parvient à fournir la solution optimale. Cela signifie qu'il est capable de trouver la meilleure solution possible pour le problème donné. 
 
-![Branchement](plots/branchementSimple.png)
+<center><img src="plots/branchementSimple.png" width="60%"></center>
 
 ### 4.2 Ajout de bornes
 #### Question 1
@@ -151,7 +151,7 @@ En ajoutant le calcul d'une borne inférieure et d'une borne supérieure en chaq
 
 Lorsque l'on compare les temps de calcul des deux algorithmes, la différence est très nette. L'algorithme borné prend beaucoup moins de temps que le précédent lorque n augmente.
 
-![Comparaison1Branchement](plots/compareBranch1.png)
+<center><img src="plots/compareBranch1.png" width="60%"></center>
 
 
 #### Question 3 :
@@ -173,8 +173,8 @@ Ceci s'explique car l'amélioration est de prendre tous les voisins du sommet s�
 La courbe suivante présente les temps de calcul de cet algorithme en fonction de la taille de l'instance pour p=0.8.
 
 On constate que la courbe produite a un profil exponentiel, ce qui confirme que cet algorithme n'est toujours pas polynomial, ce qui correspond bien au fait que le problème est NP-difficile.
-![Branchement amelioré 1](plots/branchAmeliore1.png)
 
+<center><img src="plots/branchAmeliore1.png" width="60%"></center>
 
 #### Branchement amélioré 2: 
 ( choisir le branchement de maniere à ce que le sommet soit de degre maximum )
@@ -184,11 +184,10 @@ L'algorithme amélioré 2 présente un profil général très similaire à l'am�
 ![Branchement amelioré1](plots/algo_ameliore2_tempsExec.png)
 
 Pour p=0,8 il n'y a presque aucune différence entre les deux algorithmes. La version améliorée 2 est légèrement plus rapide que la première sur des plus grandes instances.
-![Comparaison améliorés p=0.8](plots/compareAmeliorés08.png)
+<center><img src="plots/compareAmeliorés08.png" width="60%"></center>
 
 En revanche, pour p=0,2 la différence est notable. La version améliorée 2 est nettement plus rapide. Comme elle sélectionne le sommet de degré maximal, elle permet d'éliminer le plus de sommets possible en peu d'itération, même si le graphe est peu dense.
-![Comparaison améliorés p=0.2](plots/compareAmeliorés.png)
-
+<center><img src="plots/compareAmeliorés.png" width="60%"></center>
 
 #### Question 4 :
 
