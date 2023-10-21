@@ -1,6 +1,16 @@
 # Projet COMPLEX
 
+### Natacha ... ET Imane HADBI
+
 [Lien pour éditer ce markdown](https://hackmd.io/@e8Tyv4S8TlC0Zl1TAgWASg/SyrdJqFZT/edit)
+
+## 2. Graphes
+
+La représentation du graphe choisie est basée sur un dictionnaire Python. Dans cette représentation :
+
+- Les clés du dictionnaire sont les sommets du graphe, qui sont généralement des entiers.
+- Les valeurs associées à chaque clé sont des ensembles (sets) contenant les voisins de ce sommet.
+
 ## 3. Méthodes approchées
 
 #### Question 1
