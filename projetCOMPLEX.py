@@ -150,43 +150,40 @@ def algo_glouton(graph):
             graph2[arete].remove(v)
         del graph2[v]
 
-        #Juste une sécurité (normalement inutile)
-        # if somme == 0 : 
-        #     somme = sum(degreSommets(graph2))
     return C
 
-name = "values5.txt"
-f = open(name, "w")
-for i in range(1000, 5001, 1000) :
-    for j in np.arange(0.05, 0.19, 0.05) :
+# name = "values5.txt"
+# f = open(name, "w")
+# for i in range(1000, 5001, 1000) :
+#     for j in np.arange(0.05, 0.19, 0.05) :
 
-       start = time.time()
-       graphLu = lectureFichierPerso(str(i) + "_" + f'{j:.2f}')
+#        start = time.time()
+#        graphLu = lectureFichierPerso(str(i) + "_" + f'{j:.2f}')
 
-       end = time.time()
-       elapsed = end - start
+#        end = time.time()
+#        elapsed = end - start
 
-       f.write(str(i) + "_" + f'{j:.2f}'+"\n")
+#        f.write(str(i) + "_" + f'{j:.2f}'+"\n")
 
-       start = time.time()
-       solCouplage = algo_couplage(graphLu)
+#        start = time.time()
+#        solCouplage = algo_couplage(graphLu)
 
-       end = time.time()
+#        end = time.time()
 
-       f.write("Taille instance couplage : " + str(len(solCouplage[0]))+'\n')
-       elapsed = end - start
+#        f.write("Taille instance couplage : " + str(len(solCouplage[0]))+'\n')
+#        elapsed = end - start
 
-       f.write(f'Temps d\'execution algo couplage : {elapsed:.5}s'+"\n")
+#        f.write(f'Temps d\'execution algo couplage : {elapsed:.5}s'+"\n")
 
-       start = time.time()
-       solGlouton = algo_glouton(graphLu)
-       end = time.time()
+#        start = time.time()
+#        solGlouton = algo_glouton(graphLu)
+#        end = time.time()
 
-       f.write("Taille instance glouton : " + str(len(solGlouton))+"\n")
-       elapsed = end - start
+#        f.write("Taille instance glouton : " + str(len(solGlouton))+"\n")
+#        elapsed = end - start
 
-       f.write(f'Temps d\'execution algo glouton : {elapsed:.5}s'+ "\n")
-f.close()
+#        f.write(f'Temps d\'execution algo glouton : {elapsed:.5}s'+ "\n")
+# f.close()
 
 # grapheTest = createGraph(5000, 0.6)
 
@@ -249,7 +246,7 @@ def etudierSommet(graph, sommet):
         return [1, [sommet]]
     
 # graph = {0: {1, 3, 4}, 1: {0, 2}, 2: {1}, 3: {0}, 4: {0}}
-#print("solution : ", branchement(graph))
+# print("solution : ", branchement(graph))
 
 #question 2
 
@@ -494,43 +491,43 @@ def etudierSommetCouplageAmeliore2(graph, sommets, profondeur):
         return [len(sommets), sommets]
     
 
+f = open("benhmark/valeursBranchementsimple.txt", "w")
+for i in range(1, 26) :
+    print(i)
+    for p in np.arange(0.2, 0.8, 0.2) :
+        f.write(str(i) + "_" + str(p) + "\n")
+        graph = createGraph(i, p)
 
-# for i in range(20, 100) :
-#     for p in np.arange(0.2, 1, 0.3) :
+        # start = time.time()
+        # a = branchementCouplageAmeliore(graph)
+        # end = time.time()
+        # elapsed = end - start
+        # print(f'Temps d\'execution algo ameliore : {elapsed:.5}s')
+        # print("solution algo ameliore:", a[0])
 
-#         print("i = ", i , " p = ", p, "\n")
-#         graph = createGraph(i, p)
+        # start = time.time()
+        # a = branchementCouplageAmeliore2(graph)
+        # end = time.time()
+        # elapsed = end - start
+        # print(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s')
+        # print("solution ameliore 2:", a[0])
 
-#         start = time.time()
-#         a = branchementCouplageAmeliore(graph)
-#         end = time.time()
-#         elapsed = end - start
-#         print(f'Temps d\'execution algo ameliore : {elapsed:.5}s')
-#         print("solution algo ameliore:", a[0])
+        start = time.time()
+        a = branchement(graph)
+        end = time.time()
+        elapsed = end - start
+        f.write(f'Temps d\'execution algo naif : {elapsed:.5}s' + '\n')
+        # f.write("solution naive :" + str(a[0]) + '\n')
 
-#         start = time.time()
-#         a = branchementCouplageAmeliore2(graph)
-#         end = time.time()
-#         elapsed = end - start
-#         print(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s')
-#         print("solution ameliore 2:", a[0])
+        # start = time.time()
+        # a = branchementCouplage(graph)
+        # end = time.time()
+        # elapsed = end - start
+        # f.write(f'Temps d\'execution algo pas naif : {elapsed:.15}s' + '\n')
+        # f.write("solution pas naive :", a[0])
 
-#         # start = time.time()
-#         # a = branchement(graph)
-#         # end = time.time()
-#         # elapsed = end - start
-#         # print(f'Temps d\'execution algo naif : {elapsed:.5}s')
-#         # print("solution naive :", a)
+        # print("\n\n\n")
 
-#         # start = time.time()
-#         # a = branchementCouplage(graph)
-#         # end = time.time()
-#         # print(f'Temps d\'execution algo pas naif : {elapsed:.15}s')
-#         # elapsed = end - start
-#         # print("solution pas naive :", a[0])
-
-#         print("\n\n\n")
-
-#         UB = math.inf
+    UB = math.inf
 #         UB_ameliore = math.inf
 #         UB_ameliore2 = math.inf

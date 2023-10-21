@@ -1,6 +1,6 @@
 # Projet COMPLEX
 
-### Natacha ... ET Imane HADBI
+### Natacha RIVIERE ET Imane HADBI
 
 [Lien pour éditer ce markdown](https://hackmd.io/@e8Tyv4S8TlC0Zl1TAgWASg/SyrdJqFZT/edit)
 
@@ -63,14 +63,19 @@ Par conséquent, dans ce cas, l'algorithme n'est pas $7\over6$-approchée.
 #### Comparaison ( Glouton VS Couplage ):
 
 ##### Temps de calcul :
-L'algorithme "couplage" semble être plus rapide que l'algorithme "glouton" pour toutes les instances de taille n et pour tous les niveaux de p. Les temps d'exécution de l'algorithme "couplage" (exprimés en secondes) augmentent généralement de manière linéaire avec la taille de l'instance n et restent relativement faibles, même pour de grandes instances. D'autre part, les temps d'exécution de l'algorithme "glouton" augmentent plus rapidement avec n et p, et ils deviennent substantiels pour des instances plus grandes. Cela suggère que l'algorithme "couplage" est plus efficace sur le plan du temps de calcul.
+Le profil des deux courbes suivantes, avec des échelles logarithmiques, suggèrent que le temps d'éxécution des algorithmes couplages et glouton suivent une tendance exponentielle. Ce qui est cohérent avec le fait que le problème de couverture soit NP-complet, les algorithmes que nous utilisons ne sont pas polynomiaux.
+
+En revanche, l'algorithme couplage est beaucoup plus rapide que l'algorithme glouton. En effet, pour une instance de 10 mille sommets, l'algorithme de couplage trouve une solution en environ 6 secondes, contre environ 35 secondes pour l'algorithme glouton.
+
+On observe qu'en faisant varier p, le temps d'éxécution varie également. Plus p est grand, plus de temps de calcul est élevé, ce qui est cohérent car plus p est grand, plus l'algorithme doit traiter d'arêtes. En revanche, le profil des courbes reste exponentiel même avec p très petit.
 
 ![Couplage](plots/couplage_time.png)
 
 ![Glouton](plots/glouton_time.png)
 
 ##### Efficacité:
-le comportement des deux méthodes dépend de la valeur de la probabilité p. Lorsque p est très petite, la "Méthode du couplage" peut être un peu moins efficace pour capturer des arêtes rares, tandis que pour des graphes plus denses (valeur plus grande de p), les deux méthodes peuvent donner des résultats similaires. La performance dépendra de la distribution des arêtes dans le graphe en fonction de la probabilité p.
+Les courbes suivantes ont pour objectif de déterminer quel algorithme est le plus efficace pour trouver une solution proche de l'optimal. On cherche à trouver une solution de taille minimale. On constate alors que l'algorithme glouton trouve toujours des meilleures solutions que l'algorithme de couplage. Cette différence est plus marquée sur des p plus petits. 
+En revanche, elle est assez minime plus p augmente. A la lumière des analyses précédentes, on peut suggérer que même si l'algorithme glouton génère de meilleures solutions que l'algorithme de couplage, il est beaucoup trop lent à calculer et il vaudra mieux utiliser l'algorithme de couplage dans la suite de ce devoir.
 
 
 ![Efficacité](plots/efficacite_size.png)
@@ -82,11 +87,12 @@ le comportement des deux méthodes dépend de la valeur de la probabilité p. Lo
 
 #### Algo Branchement basique:                
 ##### Temps d'exécution : 
-Les temps d'exécution varient en fonction de la taille de l'instance "i" et de la probabilité de présence des arêtes "p". Il est généralement plus lent pour les valeurs élevées de "p". Les temps d'exécution vont de quelques millisecondes à plusieurs secondes.
+L'algorithme de branchement basique parcours toutes les possibilités de couverture possible, ce qui revient à éxécuter $2^n$ fois l'algorithme de couplage. Quand n augmente, le nombre de calculs à effectuer augmente très vite. Avec cet algorithme, on peut trouver rapidement une solution pour un graphe de moins de 25 sommets. Au delà, les calculs sont trop longs.
+Comme l'algorithme de couplage, qui est effectué pour chaque possibilité, est plus rapide pour des p plus petits, on retouve cette différence de vitesse dans les courbes suivantes.
 ##### Efficacité :
-L'algo parvient à fournir la solution optimale. Cela signifie qu'il est capable de trouver la meilleure solution possible pour le problème donné.
+L'algo parvient à fournir la solution optimale. Cela signifie qu'il est capable de trouver la meilleure solution possible pour le problème donné. 
 
-![Branchement](plots/.png)
+![Branchement](plots/branchementSimple.png)
 
 ### 4.2 Ajout de bornes
 #### Question 1
@@ -124,7 +130,12 @@ Donc si on a un couplage M, on aura toujours au moins $\lvert{M}\rvert$ sommets 
 TODO
 
 #### Question 2 :
-TODO
+En ajoutant le calcul d'une borne inférieure et d'une borne supérieure en chaque noeud, on réduit énormément le nombre de calculs à faire car au lieu de calculer toutes les possibilités, on n'explore que les noeuds qui sont intéressants. 
+
+Lorsque l'on compare les temps de calcul des deux algorithmes, la différence est très nette. L'algorithme borné prend beaucoup moins de temps que le précédent lorque n augmente.
+
+![Comparaison1Branchement](plots/compareBranch1.png)
+
 
 #### Question 3 :
 

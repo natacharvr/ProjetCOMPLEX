@@ -1,0 +1,192 @@
+1_0.2
+Temps d'execution algo naif : 0.0s
+1_0.4
+Temps d'execution algo naif : 0.0s
+1_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+1_0.8
+Temps d'execution algo naif : 0.0s
+2_0.2
+Temps d'execution algo naif : 0.0s
+2_0.4
+Temps d'execution algo naif : 0.0s
+2_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+2_0.8
+Temps d'execution algo naif : 0.0s
+3_0.2
+Temps d'execution algo naif : 0.0s
+3_0.4
+Temps d'execution algo naif : 0.0s
+3_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+3_0.8
+Temps d'execution algo naif : 0.0s
+4_0.2
+Temps d'execution algo naif : 0.0s
+4_0.4
+Temps d'execution algo naif : 0.0s
+4_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+4_0.8
+Temps d'execution algo naif : 0.0s
+5_0.2
+Temps d'execution algo naif : 0.0s
+5_0.4
+Temps d'execution algo naif : 0.0s
+5_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+5_0.8
+Temps d'execution algo naif : 0.0s
+6_0.2
+Temps d'execution algo naif : 0.0s
+6_0.4
+Temps d'execution algo naif : 0.0s
+6_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+6_0.8
+Temps d'execution algo naif : 0.0s
+7_0.2
+Temps d'execution algo naif : 0.0s
+7_0.4
+Temps d'execution algo naif : 0.0s
+7_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+7_0.8
+Temps d'execution algo naif : 0.0s
+8_0.2
+Temps d'execution algo naif : 0.0s
+8_0.4
+Temps d'execution algo naif : 0.0s
+8_0.6000000000000001
+Temps d'execution algo naif : 0.0s
+8_0.8
+Temps d'execution algo naif : 0.0s
+9_0.2
+Temps d'execution algo naif : 0.0s
+9_0.4
+Temps d'execution algo naif : 0.0050061s
+9_0.6000000000000001
+Temps d'execution algo naif : 0.0010066s
+9_0.8
+Temps d'execution algo naif : 0.00099754s
+10_0.2
+Temps d'execution algo naif : 0.0s
+10_0.4
+Temps d'execution algo naif : 0.00099802s
+10_0.6000000000000001
+Temps d'execution algo naif : 0.0019937s
+10_0.8
+Temps d'execution algo naif : 0.0012953s
+11_0.2
+Temps d'execution algo naif : 0.0047026s
+11_0.4
+Temps d'execution algo naif : 0.0059824s
+11_0.6000000000000001
+Temps d'execution algo naif : 0.0032847s
+11_0.8
+Temps d'execution algo naif : 0.0074031s
+12_0.2
+Temps d'execution algo naif : 0.0049846s
+12_0.4
+Temps d'execution algo naif : 0.0030694s
+12_0.6000000000000001
+Temps d'execution algo naif : 0.011734s
+12_0.8
+Temps d'execution algo naif : 0.0025675s
+13_0.2
+Temps d'execution algo naif : 0.010058s
+13_0.4
+Temps d'execution algo naif : 0.006912s
+13_0.6000000000000001
+Temps d'execution algo naif : 0.012287s
+13_0.8
+Temps d'execution algo naif : 0.016078s
+14_0.2
+Temps d'execution algo naif : 0.0052288s
+14_0.4
+Temps d'execution algo naif : 0.026452s
+14_0.6000000000000001
+Temps d'execution algo naif : 0.022361s
+14_0.8
+Temps d'execution algo naif : 0.043968s
+15_0.2
+Temps d'execution algo naif : 0.012013s
+15_0.4
+Temps d'execution algo naif : 0.021749s
+15_0.6000000000000001
+Temps d'execution algo naif : 0.080539s
+15_0.8
+Temps d'execution algo naif : 0.080499s
+16_0.2
+Temps d'execution algo naif : 0.031242s
+16_0.4
+Temps d'execution algo naif : 0.12194s
+16_0.6000000000000001
+Temps d'execution algo naif : 0.15063s
+16_0.8
+Temps d'execution algo naif : 0.21992s
+17_0.2
+Temps d'execution algo naif : 0.026137s
+17_0.4
+Temps d'execution algo naif : 0.31984s
+17_0.6000000000000001
+Temps d'execution algo naif : 0.29826s
+17_0.8
+Temps d'execution algo naif : 0.34984s
+18_0.2
+Temps d'execution algo naif : 0.05546s
+18_0.4
+Temps d'execution algo naif : 0.28303s
+18_0.6000000000000001
+Temps d'execution algo naif : 0.38444s
+18_0.8
+Temps d'execution algo naif : 0.51559s
+19_0.2
+Temps d'execution algo naif : 0.053352s
+19_0.4
+Temps d'execution algo naif : 0.80689s
+19_0.6000000000000001
+Temps d'execution algo naif : 0.95361s
+19_0.8
+Temps d'execution algo naif : 1.0368s
+20_0.2
+Temps d'execution algo naif : 0.31098s
+20_0.4
+Temps d'execution algo naif : 1.3562s
+20_0.6000000000000001
+Temps d'execution algo naif : 1.7244s
+20_0.8
+Temps d'execution algo naif : 2.3904s
+21_0.2
+Temps d'execution algo naif : 0.11568s
+21_0.4
+Temps d'execution algo naif : 1.5109s
+21_0.6000000000000001
+Temps d'execution algo naif : 2.8967s
+21_0.8
+Temps d'execution algo naif : 4.289s
+22_0.2
+Temps d'execution algo naif : 0.29053s
+22_0.4
+Temps d'execution algo naif : 4.5577s
+22_0.6000000000000001
+Temps d'execution algo naif : 7.3265s
+22_0.8
+Temps d'execution algo naif : 9.0462s
+23_0.2
+Temps d'execution algo naif : 1.0342s
+23_0.4
+Temps d'execution algo naif : 9.4834s
+23_0.6000000000000001
+Temps d'execution algo naif : 12.809s
+23_0.8
+Temps d'execution algo naif : 17.651s
+24_0.2
+Temps d'execution algo naif : 2.7216s
+24_0.4
+Temps d'execution algo naif : 22.606s
+24_0.6000000000000001
+Temps d'execution algo naif : 26.544s
+24_0.8
+Temps d'execution algo naif : 31.51s
