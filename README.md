@@ -1,6 +1,6 @@
 # Projet COMPLEX
 
-### Natacha RIVIERE ET Imane HADBI
+### Natacha RIVIERE et Imane HADBI
 
 ## 2. Graphes
 
@@ -125,24 +125,51 @@ $b_2$ est valide car par définition, un couplage est un ensemble d'arêtes d'ay
 Donc si on a un couplage M, on aura toujours au moins $\lvert{M}\rvert$ sommets dans une couverture.
 
 ##### Montrons $b_3$ :
-considérons le cas où $|C| = n_0$ . 
 
-Dans ce cas, le graphe a $n_0$ sommets en C. 
-Le nombre maximal d'arêtes qu'un graphe peut avoir avec $n_0$ sommets est donné par le graphe complet, ce qui donne:
-$\frac {n_0 (n_0 - 1)}{2}$ arêtes.
+Considérons le nombre maximal d'arêtes qu'un graphe peut avoir, donc dans un graphe complet :
 
-En utilisant cette valeur dans la formule de b3, nous obtenons :
+$m_{max} = {n*(n-1)\over 2}$
 
-$b_3 =\frac{2n_0 - 1 - \sqrt{(2n_0 - 1)^2 - 8(n_0(n_0 - 1))/2}}{2}$
+En considérant que toutes les arêtes du graphes sont couvertes par la couverture $C$ on peut calculer le nombre d'arêtes d'un graphe en retirant le nombre maximal d'arêtes non couvertes par $C$. Posons $|C| = c$.
 
-$b_3 = \frac{2n_0 - 1 - \sqrt{4n_0^2 - 4n_0 + 1 - 4n_0(n_0 - 1)}}{2}$
+On peut majorer le nombre d'arêtes d'un graphe couvert par la couverture C par cette formule :
 
-$b_3 = \frac{2n_0 - 1 - \sqrt{1}}{2}$
+$m \leq {n*(n-1)\over 2} - {(n-c)*(n-c-1)\over 2}$
 
-$b_3 = n_0 - 1$
+En effet, au maximum, un graphe couvert par la couverture $C$ peut contenir toutes les arêtes qui relie les sommets de la couverture, sans les arêtes qui relient les sommets hors de la couverture car par définition, elles ne peuvent pas exister.
 
-$|C| = n_0 > b_3$
+On développe cette expression pour obtenir :
 
+$m \leq {2nc - c^2 - c \over 2}$
+
+On souhaite trouver les racines de ce polynôme:
+
+${2nc - c^2 - c \over 2} - m \leq 0$
+
+$-{1 \over 2} c^2 + {2n-1 \over 2} c -m \leq 0$
+
+On calcule le discriminant :
+
+$\Delta = ({2n-1 \over 2})^2 - 4 *-{1 \over 2} * -m $
+
+$\Delta = {(2n-1)^2-8m \over 4}$
+
+On calcule ensuite les racines du polynome :
+
+$X_1 = {-{2n-1 \over 2} + \sqrt{(2n-1)^2-8m \over 4}\over -1}$ 
+
+$X_1 = {2n-1  - \sqrt{(2n-1)^2-8m}\over 2}$
+
+
+et 
+
+$X_2 = {-{2n-1 \over 2} - \sqrt{(2n-1)^2-8m \over 4}\over -1}$ 
+
+$X_2 = {2n-1  + \sqrt{(2n-1)^2-8m}\over 2}$
+
+Notons que l'on reconnait la borne $b_3$ en $X_1$
+
+Comme le coefficient de $c^2$ est négatif, la courbe associée à cette équation, qui est une parabole, est orientée vers le bas. Notre inéquation cherche à trouver les solutions telles que le polynôme soit positif. Comme notre plus petite solution est $X_1$, les solutions de cette équation sont toutes les valeurs de $C$ comprises entre $X_1$ et $X_2$. Donc $X_1 (=b_3)$ est une borne inférieure à la taille de $C$.
 
 #### Question 2 :
 En ajoutant le calcul d'une borne inférieure et d'une borne supérieure en chaque noeud, on réduit énormément le nombre de calculs à faire car au lieu de calculer toutes les possibilités, on n'explore que les noeuds qui sont intéressants. 
