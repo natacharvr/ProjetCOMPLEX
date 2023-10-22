@@ -152,6 +152,8 @@ def algo_glouton(graph):
 
     return C
 
+
+# bloc de commentaires servent à générer des fichiers pour les benchmarks
 # name = "values5.txt"
 # f = open(name, "w")
 # for i in range(1000, 5001, 1000) :
@@ -491,12 +493,12 @@ def etudierSommetCouplageAmeliore2(graph, sommets, profondeur):
         return [len(sommets), sommets]
     
 
-f = open("benhmark/ValeursApproximation7.txt", "w")
-for i in range(1, 101) :
-    print(i)
-    for p in np.arange(0.2, 0.8, 0.2) :
-        f.write(str(i) + "_" + str(p) + "\n")
-        graph = createGraph(i, p)
+# f = open("benhmark/ValeursApproximation7.txt", "w")
+# for i in range(1, 101) :
+#     print(i)
+#     for p in np.arange(0.2, 0.8, 0.2) :
+#         f.write(str(i) + "_" + str(p) + "\n")
+#         graph = createGraph(i, p)
 
         # start = time.time()
         # a = branchementCouplageAmeliore(graph)
@@ -506,16 +508,16 @@ for i in range(1, 101) :
         # print("solution algo ameliore:", a[0])
 
         # start = time.time()
-        coupl = algo_couplage(graph)
-        f.write("algo couplage : " + str(len(coupl[0])) + '\n')
+        # coupl = algo_couplage(graph)
+        # f.write("algo couplage : " + str(len(coupl[0])) + '\n')
 
-        glout = algo_glouton(graph)
-        f.write("algo glouton : "+ str (len(glout)) + '\n')
-        a = branchementCouplageAmeliore2(graph)
+        # glout = algo_glouton(graph)
+        # f.write("algo glouton : "+ str (len(glout)) + '\n')
+        # a = branchementCouplageAmeliore2(graph)
         # end = time.time()
         # elapsed = end - start
         # f.write(f'Temps d\'execution algo ameliore 2 : {elapsed:.5}s'+'\n')
-        f.write("solution ameliore 2:"+ str(a[0]) + '\n')
+        # f.write("solution ameliore 2:"+ str(a[0]) + '\n')
 
         # start = time.time()
         # a = branchement(graph)
@@ -534,5 +536,5 @@ for i in range(1, 101) :
         # print("\n\n\n")
 
 #         UB = math.inf
-    # UB_ameliore = math.inf
-        UB_ameliore2 = math.inf
+    #    UB_ameliore = math.inf
+        # UB_ameliore2 = math.inf
